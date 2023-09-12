@@ -15,6 +15,9 @@
   ],
   "license": "ISC",
   "main": "index.mjs",
+  "bin": {
+    "framework-logo": "index.mjs"
+  },
   "scripts": {
     "test": "node index.mjs"
   },
