@@ -1,7 +1,7 @@
 {
   "name": "framework-logo",
-  "version": "0.0.0",
-  "description": "print your favorite framework logo into the console",
+  "version": "0.0.1",
+  "description": "print your favorite framework logo into the cli",
   "author": "shirsendu bairagi <shirsendu2001@gmail.com>",
   "keywords": [
     "art",
@@ -13,7 +13,7 @@
     "nuxt",
     "logo"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.mjs",
   "bin": {
     "framework-logo": "index.mjs"

@@ -1,7 +1,7 @@
 # Framework Logo
 
-⚡️ This tool prints your favorite framework logo in CLI.
+⚡️ Print your favorite framework logo into the cli.
 
 ## Vision and Roadmap
 
-- Include all framework's Icons in JS Ecosystem 
+- Include all framework's Icons of JS Ecosystem 
