@@ -2,22 +2,27 @@
 
 import { program } from 'commander';
 import { logos } from './logo.mjs'
+import { details } from './details.mjs';
 
-program.option('-f, --framework <framework>');
+program
+	.name("framework-logo")
+	.usage("[options]")
+	.option('-f, --framework <framework>', 'prints the framework\'s logo and details');
 
 program.parse(process.argv);
 
-const options = program.opts();
-
-const framework = options.framework.toLowerCase()
+let { framework } = program.opts();
+framework = framework.toLowerCase()
 
 if (framework) {
-	if (framework in logos)
+	if (framework in logos) {
 		console.log(logos[framework])
+		console.table(await details(framework))
+	}
 	else
 		console.log(`\n
 Enter following framework names: 
-- angular, react, vue, svelte, next, nuxt
+- angular, react, vue, svelte, next, nuxt, svelte-kit
 	`)
 }
 else

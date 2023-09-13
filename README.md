@@ -1,10 +1,16 @@
 # Framework Logo
 
-⚡️ Print your favorite framework logo into the cli.
+⚡️ Print your favorite framework logo and details into the cli.
+
+![Screenshot](assets/screenshot.png)
 
 ## Usage
 
-npx framework-logo@latest -f vue
+npx framework-logo@latest -f [framework]
+
+    Options:
+    -f, --framework prints the frameworks logo
+    -h, --help display help for command
 
 ## Feature
 
@@ -16,14 +22,24 @@ Currently supports the following frameworks
 - Svelte
 - Next
 - Nuxt
+- Svelte Kit
 
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-	- SvelteKit
-	- Astro
 	- Preact
 	- Gatsby
 	- Qwik 
 	- Remix
-	- Signel
+	- Gridsome
+	- Signal
+
+- Print Details
+	- Current Version
+	- Last Updated
+	- Author
+	- Created Year
+	- GitHub Link
+	- Website Link
+
+- Run Create Commend
