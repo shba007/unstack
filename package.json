@@ -1,7 +1,7 @@
 {
   "name": "framework-logo",
-  "version": "0.0.3",
-  "description": "print your favorite framework logo and details into the cli",
+  "version": "0.0.4",
+  "description": "print your favorite framework's logo and details into the cli",
   "author": "shirsendu bairagi <shirsendu2001@gmail.com>",
   "keywords": [
     "art",
@@ -14,7 +14,9 @@
     "svelte",
     "next",
     "nuxt",
-    "svelte-kit"
+    "svelte-kit",
+    "astro",
+    "preact"
   ],
   "license": "MIT",
   "main": "index.mjs",

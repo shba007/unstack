@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 
 export const logos = {
-  angular: chalk.red(`                                                
+  angular: chalk.hex("#DD0032")(`                                                
                  ##########                   
             ####################              
        ##############*###############         
@@ -24,33 +24,30 @@ export const logos = {
               ##############                 
                   ######                         
     `),
-  react: chalk.cyan(`
-               ---------        ---------           
-             ----- -------    ------- -----         
-             ---       ----------       ---         
-             ---         ------         ---         
-             ---        --------        ---         
-             ---       ----  ----       ---         
-             ------------------------------         
-           ----------------------------------       
-       ----------  ----          ----  ----------   
-     ------    -------  --------  -------    ------ 
-    ----        -----   --------   -----        ----
-    ---         ----   ----------   ----         ---
-    ----       ------   --------   -----        ----
-     -----     -------  --------  -------     ----- 
-       ----------- ----          ---- -----------   
-           ----------------------------------       
-             ---  --------------------  ---         
-             ---       ----  ----       ---         
-             ---        --------        ---         
-             ---         ------         ---         
-             ---       ----------       ---         
-              ---- -------    ------- ----          
-               ---------        ---------              
-          
+  react: chalk.hex("#149ECA")(`                                                                                                                           
+              ++++++++++*   *++++++++++                            
+             +++     **++++++++*    *+++                           
+            +++         ++++*        *++                           
+            ++*       +++*#*++*       ++*                          
+            ++#      +++*+***+++      ++*                          
+            ++++++++++++++++++++++++++++*                          
+         *+++++***+++          +++* **+++++*                       
+      *++++* +++ *++            *+++ *++ *++++                     
+     +++*    *+++++    *++++++    ++*++*    +++*                   
+    +++       *+++    ++++++++*   +++++      +++                   
+    +++       *+++    ++++++++#    +++*      *++*                  
+     +++      +++++    ++++++*    *++++     +++*                   
+      ++++*  +++*++*     ***     +++*+++  ++++*                    
+        *++++++# *++*           +++  ++++++**                      
+           *++++++++++***+++***+++++++++*                          
+            ++*  *+++++*++++*++++++*  ++*                          
+            ++#      *+++  +++*       ++*                          
+            +++        *++++++        ++*                          
+            *+++       *+++++*       *++                           
+             *+++++*+++++* *++++*++++++*                           
+               +++++++        *++*+++*                                                                                                                                                             
     `),
-  vue: chalk.green(`
+  vue: chalk.hex("#40B983")(`
    =========+#########*        *#########+=========
     =========+*########*      *########*+========+ 
      =========+*########*    *########*+=========  
@@ -75,7 +72,7 @@ export const logos = {
                           ==                       
                              
    `),
-  svelte: chalk.redBright(`                       
+  svelte: chalk.hex("#FF3E00")(`                       
                             ***************          
                        **********************       
                     ***************************     
@@ -108,7 +105,7 @@ export const logos = {
            *********************+                   
               ***************                       
 `),
-  next: chalk.black(`               
+  next: chalk.hex("#000000")(`               
                    @@@@@@@@@@@@@@@@@@               
                @@@@@@@@@@@@@@@@@@@@@@@@@@           
              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         
@@ -136,7 +133,7 @@ export const logos = {
                @@@@@@@@@@@@@@@@@@@@@@@@@            
                    @@@@@@@@@@@@@@@@@@               
     `),
-  nuxt: chalk.greenBright(`                                                       
+  nuxt: chalk.hex("#00dC82")(`                                                       
                     =======                                           
                    =========                                          
                   ==========+                                         
@@ -159,7 +156,7 @@ export const logos = {
      =======================         ======================            
         =+=============+==            ===================+                                                                  
     `),
-  "svelte-kit": chalk.redBright(`                       
+  "svelte-kit": chalk.hex("#FF3E00")(`                       
                             ***************          
                        **********************       
                     ***************************     
@@ -192,7 +189,7 @@ export const logos = {
            *********************+                   
               ***************                       
 `),
-  astro: chalk.magenta(`
+  astro: chalk.hex("#DC3E8B")(`
                  @@@@@@@@@@@@@@@@@@@@@              
                  @@@@@@@@@@@@@@@@@@@@@@             
                 @@@@@@@@@@@@@@@@@@@@@@@@            
@@ -225,6 +222,34 @@ export const logos = {
                          @@@@@@                     
                           @@@@                      
                             @@@                     
+  `),
+  preact: chalk.hex("#673AB8")(`                      
+                      XXXX                      
+                   XXXXXXXXXX                   
+               XXXXXXXXXXXXXXXXXX               
+            XXXXXXXXXXXXXXXXXXXXXXXX            
+         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX         
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX      
+   XXXXXX+..::...;+xXXXXXXXXx+;...:...+XXXXXX   
+   XXXXX;.XXXXXXXX+:.:+XX+..:+XXXXXXXX.+XXXXX   
+   XXXXX;:XXXXXXXXXXXX+  +XXXXXXXXXXXX:;XXXXX   
+   XXXXXx.+XXXXXXXXx..+XX+..xXXXXXXXX+.xXXXXX   
+   XXXXXX+.xXXXXX;.;xXXXXXXx;.;XXXXXx.+XXXXXX   
+   XXXXXXX+.+XX+.;XXXX+::+XXXX:.+XX;.xXXXXXXX   
+   XXXXXXXXX...;XXXXx.    .xXXXX:...XXXXXXXXX   
+   XXXXXXXXX...;XXXXx.    .xXXXX;...XXXXXXXXX   
+   XXXXXXXx.+XX;.;XXXX;..;XXXX;.+XX;.xXXXXXXX   
+   XXXXXX+.xXXXXX;.;xXXXXXXx;.;XXXXXx.+XXXXXX   
+   XXXXXx.+XXXXXXXXx..xXX+..xXXXXXXXX+.xXXXXX   
+   XXXXX;:XXXXXXXXXXXX+..+XXXXXXXXXXXX:;XXXXX   
+   XXXXX;.XXXXXXXX+:..+Xx+..:+XXXXXXXX.+XXXXX   
+   XXXXXX+..::...;+xXXXXXXXXx+;...:...+XXXXXX   
+      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX      
+         XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX         
+            XXXXXXXXXXXXXXXXXXXXXXXX            
+               XXXXXXXXXXXXXXXXXX               
+                   XXXXXXXXXX                   
+                      XXXX                      
   `)
 
 }

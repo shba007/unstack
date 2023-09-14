@@ -1,35 +1,42 @@
 import { ofetch } from "ofetch";
 
-export async function details(framework) {
-	let repoName;
-
-	switch (framework) {
-		case "angular":
-			repoName = "angular/angular"
-			break;
-		case "react":
-			repoName = "facebook/react"
-			break;
-		case "vue":
-			repoName = "vuejs/core"
-			break;
-		case "svelte":
-			repoName = "sveltejs/svelte"
-			break;
-		case "next":
-			repoName = "vercel/next.js"
-		case "nuxt":
-			repoName = "nuxt/nuxt"
-			break;
-		case "svelte-kit":
-			repoName = "sveltejs/kit"
-
-		default:
-			break;
+const frameworks = {
+	angular: {
+		repo: "angular/angular"
+	},
+	react: {
+		repo: "facebook/react"
+	},
+	vue: {
+		repo: "vuejs/core"
+	},
+	svelte: {
+		repo: "sveltejs/svelte"
+	},
+	next: {
+		repo: "vercel/next.js"
+	},
+	nuxt: {
+		repo: "nuxt/nuxt"
+	},
+	"svelte-kit": {
+		repo: "sveltejs/kit"
+	},
+	"astro": {
+		repo: "withastro/astro"
+	},
+	"preact": {
+		repo: "preactjs/preact"
 	}
+}
 
-	const { repo } = await ofetch(`https://ungh.cc/repos/${repoName}`);
-	const { release } = await ofetch(`https://ungh.cc/repos/${repoName}/releases/latest`);
+export async function details(framework) {
+	let repoName = frameworks[framework].repo;
+
+	const [{ repo }, { release }] = await Promise.all([
+		ofetch(`https://ungh.cc/repos/${repoName}`),
+		ofetch(`https://ungh.cc/repos/${repoName}/releases/latest`),
+	]);
 
 	const { description, stars, createdAt } = repo
 	const { tag, publishedAt } = release
