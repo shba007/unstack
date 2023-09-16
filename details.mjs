@@ -1,37 +1,72 @@
 import { ofetch } from "ofetch";
+import { format, formatDistance, parseISO } from 'date-fns'
+
 
 const frameworks = {
 	angular: {
-		repo: "angular/angular"
+		name: "Angular",
+		repo: "angular/angular",
+		author: "Google",
+		website: "https://angular.io"
 	},
 	react: {
-		repo: "facebook/react"
+		name: "React",
+		repo: "facebook/react",
+		author: "Facebook",
+		website: "https://react.dev"
 	},
 	vue: {
-		repo: "vuejs/core"
+		name: "Vue.js",
+		repo: "vuejs/core",
+		author: "Evan You",
+		website: "https://vuejs.org"
 	},
 	svelte: {
-		repo: "sveltejs/svelte"
+		name: "Svelte",
+		repo: "sveltejs/svelte",
+		author: "Rich Harris",
+		website: "https://svelte.dev"
 	},
 	next: {
-		repo: "vercel/next.js"
+		name: "Next.js",
+		repo: "vercel/next.js",
+		author: "Guillermo Rauch",
+		website: "https://nextjs.org"
 	},
 	nuxt: {
-		repo: "nuxt/nuxt"
+		name: "Nuxt",
+		repo: "nuxt/nuxt",
+		author: ["Alexandre Chopin", "Sebastien Chopin", "Pooya Parsa"],
+		website: "https://nuxt.com"
 	},
 	"svelte-kit": {
-		repo: "sveltejs/kit"
+		name: "SvelteKit",
+		repo: "sveltejs/kit",
+		author: "Rich Harris",
+		website: "https://kit.svelte.dev"
 	},
-	"astro": {
-		repo: "withastro/astro"
+	astro: {
+		name: "Astro",
+		repo: "withastro/astro",
+		author: "Fred K. Schott",
+		website: "https://astro.build"
 	},
-	"preact": {
-		repo: "preactjs/preact"
-	}
+	preact: {
+		name: "Preact",
+		repo: "preactjs/preact",
+		author: "Jason Miller",
+		website: "https://preactjs.com"
+	},
+	gatsby: {
+		name: "Gatsby",
+		repo: "gatsbyjs/gatsby",
+		author: "Kyle Mathews",
+		website: "https://www.gatsbyjs.com"
+	},
 }
 
 export async function details(framework) {
-	let repoName = frameworks[framework].repo;
+	let { repo: repoName, author, website } = frameworks[framework];
 
 	const [{ repo }, { release }] = await Promise.all([
 		ofetch(`https://ungh.cc/repos/${repoName}`),
@@ -44,9 +79,11 @@ export async function details(framework) {
 	return {
 		description,
 		stars,
-		createdAt,
+		createdAt: `${format(parseISO(createdAt), 'dd MMM, yyyy')} (${formatDistance(parseISO(createdAt), new Date(), { addSuffix: true })})`,
+		updatedAt: formatDistance(parseISO(publishedAt), new Date(), { addSuffix: true }),
 		version: tag,
-		publishedAt,
+		author: author,
 		githubLink: `https://github.com/${repoName}`,
+		websiteLink: website
 	}
 }

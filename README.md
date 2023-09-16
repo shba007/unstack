@@ -25,23 +25,24 @@ Currently supports the following frameworks
 - Svelte Kit
 - Astro
 - Preact
+- Gatsby
 
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-	- Gatsby
+	- Lit
 	- Qwik 
 	- Remix
 	- Solid
 	- Alpine
 	- Gridsome
-	- Signal
+	- Analog
 
 - Print Details
-	- Current Version
+	- Created
 	- Last Updated
 	- Author
-	- Created Year
+	- Current Version
 	- GitHub Link
 	- Website Link
 
