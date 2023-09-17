@@ -16,7 +16,7 @@ async function getFramework(framework) {
 	else
 		console.log(`
 Enter following framework names: 
-- angular, react, vue, svelte, next, nuxt, svelte-kit, astro, preact, gatsby
+- angular, react, vue, svelte, next, nuxt, svelte-kit, astro, preact, gatsby, solid
 		`)
 }
 
@@ -75,6 +75,10 @@ Enter following framework names:
 				{
 					name: "Gatsby",
 					value: "gatsby"
+				},
+				{
+					name: "Soild.js",
+					value: "solid"
 				}
 			]
 		});

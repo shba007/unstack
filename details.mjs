@@ -54,24 +54,31 @@ const frameworks = {
 	astro: {
 		name: "Astro",
 		repo: "astro/build",
-		publishedAt: "2020-10-19T18:30:00.000Z",
+		publishedAt: "2022-06-07T18:30:00.000Z",
 		author: "Fred K. Schott",
 		website: "https://astro.build"
 	},
 	preact: {
 		name: "Preact",
 		repo: "preactjs/preact",
-		publishedAt: "2015-05-05T18:30:00.000Z",
+		publishedAt: "2015-11-12T18:30:00.000Z",
 		author: "Jason Miller",
 		website: "https://preactjs.com"
 	},
 	gatsby: {
 		name: "Gatsby",
 		repo: "gatsbyjs/gatsby",
-		publishedAt: "2015-07-06T18:30:00.000Z",
+		publishedAt: "2022-11-07T18:30:00.000Z",
 		author: "Kyle Mathews",
 		website: "https://www.gatsbyjs.com"
 	},
+	solid: {
+		name: "Solid.js",
+		repo: "solidjs/solid",
+		publishedAt: "2021-04-05T18:30:00.000Z",
+		author: "Ryan Carniato",
+		website: "https://www.solidjs.com"
+	}
 }
 
 export async function details(framework) {

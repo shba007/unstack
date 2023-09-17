@@ -26,24 +26,26 @@ Currently supports the following frameworks
 - Astro
 - Preact
 - Gatsby
+- Solid
+
+Currently displays the following details
+
+- Starts
+- Published At
+- Updated At
+- Author
+- Version
+- GitHub Link
+- Website Link
 
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
 	- Remix
-	- Solid
 	- Qwik
 	- Lit
 	- Alpine
 	- Gridsome
 	- Analog
-
-- Print Details
-	- Created
-	- Last Updated
-	- Author
-	- Current Version
-	- GitHub Link
-	- Website Link
 
 - Run Create Commend
