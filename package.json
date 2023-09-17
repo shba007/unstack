@@ -16,7 +16,8 @@
     "nuxt",
     "svelte-kit",
     "astro",
-    "preact"
+    "preact",
+    "gatsby"
   ],
   "license": "MIT",
   "main": "index.mjs",

@@ -2,7 +2,7 @@
 
 ⚡️ Print your favorite framework's logo and details into the cli.
 
-![Screenshot](./assets/screenshot.png)
+![Screenshot](./assets/screenshot.webp)
 
 ## Usage
 
@@ -30,10 +30,10 @@ Currently supports the following frameworks
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-	- Lit
-	- Qwik 
 	- Remix
 	- Solid
+	- Qwik
+	- Lit
 	- Alpine
 	- Gridsome
 	- Analog
