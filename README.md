@@ -1,13 +1,24 @@
 # Framework Logo
 
-⚡️ Print your favorite framework's logo and details into the cli.
+> ⚡️ Print your favorite framework's logo and details into the cli.
 
-![Screenshot](./assets/screenshot.webp)
+<p align="center">
+	<br>
+	<img src="assets/screenshot.webp" width="500">
+	<br>
+</p>
 
 ## Usage
 
+```sh
+npx framework-logo@latest
+```
+
+With argument
+``` sh
 npx framework-logo@latest -f [framework]
 
+```
     Options:
     -f, --framework prints the framework's logo and details
     -h, --help display help for command
@@ -27,6 +38,7 @@ Currently supports the following frameworks
 - Preact
 - Gatsby
 - Solid
+- Remix
 
 Currently displays the following details
 
@@ -41,7 +53,6 @@ Currently displays the following details
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-	- Remix
 	- Qwik
 	- Lit
 	- Alpine

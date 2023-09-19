@@ -1,6 +1,6 @@
 {
   "name": "framework-logo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "print your favorite framework's logo and details into the cli",
   "author": "shirsendu bairagi <shirsendu2001@gmail.com>",
   "keywords": [
@@ -18,22 +18,24 @@
     "astro",
     "preact",
     "gatsby",
-    "solidjs"
+    "solidjs",
+    "remix"
   ],
   "license": "MIT",
-  "main": "index.mjs",
+  "main": "index.js",
   "bin": {
-    "framework-logo": "index.mjs"
+    "framework-logo": "index.js"
   },
+  "type": "module",
   "scripts": {
-    "test": "node index.mjs"
+    "test": "node index.js"
   },
   "dependencies": {
     "@inquirer/prompts": "^3.1.1",
     "chalk": "^5.3.0",
     "commander": "^11.0.0",
     "date-fns": "^2.30.0",
-    "nanospinner": "^1.1.0",
-    "ofetch": "^1.3.3"
+    "ofetch": "^1.3.3",
+    "ora": "^7.0.1"
   }
 }

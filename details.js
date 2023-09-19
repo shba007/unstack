@@ -1,5 +1,6 @@
 import { ofetch } from "ofetch";
-import { format, formatDistance, parseISO } from 'date-fns'
+import { format, formatDistance, parseISO } from "date-fns"
+import ora from "ora";
 
 const frameworks = {
 	angular: {
@@ -53,7 +54,7 @@ const frameworks = {
 	},
 	astro: {
 		name: "Astro",
-		repo: "astro/build",
+		repo: "withastro/astro",
 		publishedAt: "2022-06-07T18:30:00.000Z",
 		author: "Fred K. Schott",
 		website: "https://astro.build"
@@ -78,10 +79,19 @@ const frameworks = {
 		publishedAt: "2021-04-05T18:30:00.000Z",
 		author: "Ryan Carniato",
 		website: "https://www.solidjs.com"
+	},
+	remix: {
+		name: "Remix",
+		repo: "remix-run/remix",
+		publishedAt: "2021-09-30T18:30:00.000Z",
+		author: "Michael Jackson",
+		website: "https://remix.run"
 	}
 }
 
 export async function details(framework) {
+	const spinner = ora("Loading Details").start();
+
 	let { repo: repoName, publishedAt, author, website } = frameworks[framework];
 
 	const [{ repo }, { release }] = await Promise.all([
@@ -89,13 +99,14 @@ export async function details(framework) {
 		ofetch(`https://ungh.cc/repos/${repoName}/releases/latest`),
 	]);
 
+	spinner.succeed("Loaded Details");
 	const { description, stars } = repo
 	const { tag, publishedAt: updatedAt } = release
 
 	return {
 		description,
 		stars,
-		publishedAt: `${format(parseISO(publishedAt), 'dd MMM, yyyy')} (${formatDistance(parseISO(publishedAt), new Date(), { addSuffix: true })})`,
+		publishedAt: `${format(parseISO(publishedAt), "dd MMM, yyyy")} (${formatDistance(parseISO(publishedAt), new Date(), { addSuffix: true })})`,
 		updatedAt: formatDistance(parseISO(updatedAt), new Date(), { addSuffix: true }),
 		version: tag,
 		author: author,

@@ -3,12 +3,12 @@
 import { program } from 'commander';
 import { select } from '@inquirer/prompts';
 
-import { logos } from './logo.mjs'
-import { details } from './details.mjs';
-
+import { logos } from './logo.js'
+import { details } from './details.js';
 
 async function getFramework(framework) {
 	framework = framework.toLowerCase()
+
 	if (framework in logos) {
 		console.log(logos[framework])
 		console.table(await details(framework))
@@ -16,7 +16,7 @@ async function getFramework(framework) {
 	else
 		console.log(`
 Enter following framework names: 
-- angular, react, vue, svelte, next, nuxt, svelte-kit, astro, preact, gatsby, solid
+- angular, react, vue, svelte, next, nuxt, svelte-kit, astro, preact, gatsby, solid, remix
 		`)
 }
 
@@ -79,6 +79,10 @@ Enter following framework names:
 				{
 					name: "Soild.js",
 					value: "solid"
+				},
+				{
+					name: "Remix",
+					value: "remix"
 				}
 			]
 		});
