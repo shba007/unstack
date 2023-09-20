@@ -50,6 +50,7 @@ Currently displays the following details
 - Version
 - GitHub Link
 - Website Link
+- Init Commend
 
 ## Vision and Roadmap
 

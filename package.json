@@ -33,7 +33,7 @@
     "url": "git+https://github.com/shba007/framework-logo.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "test": "node ."
   },
   "dependencies": {
     "@inquirer/prompts": "^3.1.1",
