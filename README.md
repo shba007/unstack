@@ -1,6 +1,6 @@
 # Framework Logo
 
-> ⚡️ Print your favorite framework's logo and details into the cli.
+> :printer: Print your favorite framework's logo and details into the cli.
 
 <p align="center">
 	<br>
@@ -39,6 +39,7 @@ Currently supports the following frameworks
 - Gatsby
 - Solid
 - Remix
+- Qwik
 
 Currently displays the following details
 
@@ -53,10 +54,19 @@ Currently displays the following details
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-	- Qwik
 	- Lit
 	- Alpine
 	- Gridsome
 	- Analog
 
-- Run Create Commend
+- Add all Runtime
+	- Node.js
+	- Deno
+	- Bun
+- Add all Build Tools/Bundler
+	- Webpack
+	- Vite
+	- Rollup
+	- Parcel
+	- Snowpack
+

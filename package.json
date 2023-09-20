@@ -1,6 +1,6 @@
 {
   "name": "framework-logo",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "print your favorite framework's logo and details into the cli",
   "author": "shirsendu bairagi <shirsendu2001@gmail.com>",
   "keywords": [
@@ -19,7 +19,8 @@
     "preact",
     "gatsby",
     "solidjs",
-    "remix"
+    "remix",
+    "qwik"
   ],
   "license": "MIT",
   "main": "index.js",
@@ -27,8 +28,12 @@
     "framework-logo": "index.js"
   },
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shba007/framework-logo.git"
+  },
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "@inquirer/prompts": "^3.1.1",
