@@ -20,7 +20,8 @@
     "gatsby",
     "solidjs",
     "remix",
-    "qwik"
+    "qwik",
+    "lit"
   ],
   "license": "MIT",
   "main": "index.js",

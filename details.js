@@ -106,6 +106,14 @@ export const frameworks = {
 		author: "Misko Hevery",
 		website: "https://qwik.builder.io",
 		initCommend: ["npm create qwik@latest"]
+	},
+	lit: {
+		name: "Lit",
+		repo: "lit/lit",
+		publishedAt: "2021-04-20T18:30:00.000Z",
+		author: "Kevin Christiansen",
+		website: "https://lit.dev",
+		initCommend: ["npm init @open-wc", "npm i lit"]
 	}
 }
 

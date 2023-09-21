@@ -3,9 +3,9 @@
 > :printer: Print your favorite framework's logo and details into the cli.
 
 <p align="center">
-	<br>
-	<img src="assets/screenshot.webp" width="500">
-	<br>
+    <br>
+    <img src="assets/screenshot.webp" width="500">
+    <br>
 </p>
 
 ## Usage
@@ -25,24 +25,31 @@ npx framework-logo@latest -f [framework]
 
 ## Feature
 
-Currently supports the following frameworks
+Currently supports the following 
 
-- Angular
-- React
-- Vue
-- Svelte
-- Next
-- Nuxt
-- Svelte Kit
-- Astro
-- Preact
-- Gatsby
-- Solid
-- Remix
-- Qwik
+- Frameworks:-
+    - Frontend:-  
+      - Angular
+      - React
+      - Vue
+      - Svelte
+      - Astro
+      - Preact
+      - Gatsby
+      - Solid
+      - Remix
+      - Qwik
+      - Lit
+    - Backend:-
+     
+    - FullStack:-
+      - Next
+      - Nuxt
+      - Svelte Kit
 
 Currently displays the following details
 
+- Description
 - Starts
 - Published At
 - Updated At
@@ -55,19 +62,21 @@ Currently displays the following details
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-	- Lit
-	- Alpine
-	- Gridsome
-	- Analog
+    - Alpine
+    - Gridsome
+    - Analog
+    - NestJS
+    - Express
+    - Nitro
 
 - Add all Runtime
-	- Node.js
-	- Deno
-	- Bun
+    - Node.js
+    - Deno
+    - Bun
 - Add all Build Tools/Bundler
-	- Webpack
-	- Vite
-	- Rollup
-	- Parcel
-	- Snowpack
+    - Webpack
+    - Vite
+    - Rollup
+    - Parcel
+    - Snowpack
 
