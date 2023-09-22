@@ -2,7 +2,34 @@ import { ofetch } from "ofetch";
 import { format, formatDistance, parseISO } from "date-fns"
 import ora from "ora";
 
-export const frameworks = {
+interface Framework {
+	name: string;
+	repo: string;
+	publishedAt: string;
+	author: string | string[];
+	website: string;
+	initCommend: string[];
+}
+
+export enum FrameworkName {
+	Angular = 'angular',
+	React = 'react',
+	"Vue.js" = 'vue',
+	Svelte = 'svelte',
+	"Next.js" = 'next',
+	Nuxt = 'nuxt',
+	"Svelte Kit" = 'svelte-kit',
+	Astro = 'astro',
+	Preact = 'preact',
+	Gatsby = 'gatsby',
+	"Solid.js" = 'solid',
+	Remix = 'remix',
+	Qwik = 'qwik',
+	Lit = 'lit',
+}
+
+
+export const frameworks: Record<FrameworkName, Framework> = {
 	angular: {
 		name: "Angular",
 		repo: "angular/angular",
@@ -117,7 +144,7 @@ export const frameworks = {
 	}
 }
 
-export async function getDetails(framework) {
+export async function getDetails(framework: FrameworkName) {
 	const spinner = ora("Loading Details").start();
 
 	let { repo: repoName, publishedAt, author, website, initCommend } = frameworks[framework];

@@ -4,10 +4,10 @@ import { program } from 'commander';
 import { select } from '@inquirer/prompts';
 
 import { logos } from './logo.js'
-import { frameworks, getDetails } from './details.js';
+import { FrameworkName, getDetails } from './details.js';
 
-async function getFramework(framework) {
-	framework = framework.toLowerCase()
+async function getFramework(framework: FrameworkName) {
+	framework = framework.toLowerCase() as FrameworkName
 
 	if (framework in logos) {
 		console.log(logos[framework])
@@ -16,7 +16,7 @@ async function getFramework(framework) {
 	else
 		console.log(`
 Enter following framework names: 
--${Object.entries(frameworks).map(([value, { name }]) => " " + value)}
+-${Object.values(FrameworkName).map(name => " " + name)}
 `)
 }
 
@@ -31,13 +31,12 @@ Enter following framework names:
 
 	if (framework) {
 		getFramework(framework)
-	}
-	else {
+	} else {
 		const framework = await select({
 			message: 'Select framework',
-			choices: Object.entries(frameworks).map(([value, { name }]) => ({
-				name: name,
-				value: value,
+			choices: Object.entries(FrameworkName).map(([name, value]) => ({
+				name,
+				value
 			}))
 		});
 
