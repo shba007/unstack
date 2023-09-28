@@ -5,6 +5,7 @@ import ora from "ora";
 interface Framework {
 	name: string;
 	repo: string;
+	color: string;
 	publishedAt: string;
 	author: string | string[];
 	website: string;
@@ -26,6 +27,7 @@ export enum FrameworkName {
 	Remix = 'remix',
 	Qwik = 'qwik',
 	Lit = 'lit',
+	"Alpine.js" = "alpine"
 }
 
 
@@ -33,6 +35,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	angular: {
 		name: "Angular",
 		repo: "angular/angular",
+		color: "#DD0032",
 		publishedAt: "2016-09-13T18:30:00.000Z",
 		author: "Google",
 		website: "https://angular.io",
@@ -41,6 +44,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	react: {
 		name: "React",
 		repo: "facebook/react",
+		color: "#149ECA",
 		publishedAt: "2013-05-28T18:30:00.000Z",
 		author: "Facebook",
 		website: "https://react.dev",
@@ -49,6 +53,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	vue: {
 		name: "Vue.js",
 		repo: "vuejs/vue",
+		color: "#40B983",
 		publishedAt: "2014-01-31T18:30:00.000Z",
 		author: "Evan You",
 		website: "https://vuejs.org",
@@ -57,6 +62,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	svelte: {
 		name: "Svelte",
 		repo: "sveltejs/svelte",
+		color: "#FF3E00",
 		publishedAt: "2016-11-28T18:30:00.000Z",
 		author: "Rich Harris",
 		website: "https://svelte.dev",
@@ -65,6 +71,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	next: {
 		name: "Next.js",
 		repo: "vercel/next.js",
+		color: "#000000",
 		publishedAt: "2016-10-24T18:30:00.000Z",
 		author: "Guillermo Rauch",
 		website: "https://nextjs.org",
@@ -73,6 +80,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	nuxt: {
 		name: "Nuxt",
 		repo: "nuxt/nuxt",
+		color: "#00dC82",
 		publishedAt: "2016-10-25T18:30:00.000Z",
 		author: ["Alexandre Chopin", "Sebastien Chopin", "Pooya Parsa"],
 		website: "https://nuxt.com",
@@ -81,6 +89,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	"svelte-kit": {
 		name: "Svelte Kit",
 		repo: "sveltejs/kit",
+		color: "#FF3E00",
 		publishedAt: "2022-11-30T18:30:00.000Z",
 		author: "Rich Harris",
 		website: "https://kit.svelte.dev",
@@ -89,6 +98,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	astro: {
 		name: "Astro",
 		repo: "withastro/astro",
+		color: "#DC3E8B",
 		publishedAt: "2022-06-07T18:30:00.000Z",
 		author: "Fred K. Schott",
 		website: "https://astro.build",
@@ -97,6 +107,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	preact: {
 		name: "Preact",
 		repo: "preactjs/preact",
+		color: "#673AB8",
 		publishedAt: "2015-11-12T18:30:00.000Z",
 		author: "Jason Miller",
 		website: "https://preactjs.com",
@@ -105,6 +116,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	gatsby: {
 		name: "Gatsby",
 		repo: "gatsbyjs/gatsby",
+		color: "#663399",
 		publishedAt: "2022-11-07T18:30:00.000Z",
 		author: "Kyle Mathews",
 		website: "https://www.gatsbyjs.com",
@@ -113,6 +125,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	solid: {
 		name: "Solid.js",
 		repo: "solidjs/solid",
+		color: "#4A80C1",
 		publishedAt: "2021-04-05T18:30:00.000Z",
 		author: "Ryan Carniato",
 		website: "https://www.solidjs.com",
@@ -121,6 +134,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	remix: {
 		name: "Remix",
 		repo: "remix-run/remix",
+		color: "#E8F2FF",
 		publishedAt: "2021-09-30T18:30:00.000Z",
 		author: "Michael Jackson",
 		website: "https://remix.run",
@@ -129,6 +143,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	qwik: {
 		name: "Qwik",
 		repo: "BuilderIO/qwik",
+		color: "#AC7Ef4",
 		publishedAt: "2022-09-19T18:30:00.000Z",
 		author: "Misko Hevery",
 		website: "https://qwik.builder.io",
@@ -137,10 +152,20 @@ export const frameworks: Record<FrameworkName, Framework> = {
 	lit: {
 		name: "Lit",
 		repo: "lit/lit",
+		color: "#324FFF",
 		publishedAt: "2021-04-20T18:30:00.000Z",
 		author: "Kevin Christiansen",
 		website: "https://lit.dev",
 		initCommend: ["npm init @open-wc", "npm i lit"]
+	},
+	alpine: {
+		name: "Alpine.js",
+		repo: "alpinejs/alpine",
+		color: "#77C1D2",
+		publishedAt: "2019-11-28T18:30:00.000Z",
+		author: "Caleb Porzio",
+		website: "https://alpinejs.dev",
+		initCommend: ["npm install alpinejs"]
 	}
 }
 

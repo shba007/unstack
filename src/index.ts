@@ -2,9 +2,10 @@
 
 import { program } from 'commander';
 import { select } from '@inquirer/prompts';
+import chalk from 'chalk';
 
 import { logos } from './logo.js'
-import { FrameworkName, getDetails } from './details.js';
+import { FrameworkName, frameworks, getDetails } from './details.js';
 
 async function getFramework(framework: FrameworkName) {
 	framework = framework.toLowerCase() as FrameworkName
@@ -35,7 +36,7 @@ Enter following framework names:
 		const framework = await select({
 			message: 'Select framework',
 			choices: Object.entries(FrameworkName).map(([name, value]) => ({
-				name,
+				name: chalk.hex(frameworks[value].color)(name),
 				value
 			}))
 		});

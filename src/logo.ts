@@ -1,8 +1,8 @@
 import chalk from 'chalk';
-import { FrameworkName } from './details.js';
+import { FrameworkName, frameworks } from './details.js';
 
 export const logos: Record<FrameworkName, string> = {
-  angular: chalk.hex("#DD0032")(`                                                
+  angular: chalk.hex(frameworks.angular.color)(`                                                
                  ##########                   
             ####################              
        ##############*###############         
@@ -25,7 +25,7 @@ export const logos: Record<FrameworkName, string> = {
               ##############                 
                   ######                         
     `),
-  react: chalk.hex("#149ECA")(`                                                                                                                           
+  react: chalk.hex(frameworks.react.color)(`                                                                                                                           
                ######                ######
              ###     ####        ####     ###
             ##          ###    ###          ##
@@ -52,7 +52,7 @@ export const logos: Record<FrameworkName, string> = {
              ###     ####        ####     ###
                ######                ######                                                                                                                                                 
     `),
-  vue: chalk.hex("#40B983")(`
+  vue: chalk.hex(frameworks.vue.color)(`
    =========+#########*        *#########+=========
     =========+*########*      *########*+========+ 
      =========+*########*    *########*+=========  
@@ -77,7 +77,7 @@ export const logos: Record<FrameworkName, string> = {
                           ==                       
                              
    `),
-  svelte: chalk.hex("#FF3E00")(`                       
+  svelte: chalk.hex(frameworks.svelte.color)(`                       
                             ***************          
                        **********************       
                     ***************************     
@@ -110,7 +110,7 @@ export const logos: Record<FrameworkName, string> = {
            *********************+                   
               ***************                       
 `),
-  next: chalk.hex("#000000")(`               
+  next: chalk.hex(frameworks.next.color)(`               
                    @@@@@@@@@@@@@@@@@@               
                @@@@@@@@@@@@@@@@@@@@@@@@@@           
              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         
@@ -138,7 +138,7 @@ export const logos: Record<FrameworkName, string> = {
                @@@@@@@@@@@@@@@@@@@@@@@@@            
                    @@@@@@@@@@@@@@@@@@               
     `),
-  nuxt: chalk.hex("#00dC82")(`                                                       
+  nuxt: chalk.hex(frameworks.nuxt.color)(`                                                       
                     =======                                           
                    =========                                          
                   ==========+                                         
@@ -161,7 +161,7 @@ export const logos: Record<FrameworkName, string> = {
      =======================         ======================            
         =+=============+==            ===================+                                                                  
     `),
-  "svelte-kit": chalk.hex("#FF3E00")(`                       
+  "svelte-kit": chalk.hex(frameworks["svelte-kit"].color)(`                       
                             ***************          
                        **********************       
                     ***************************     
@@ -194,7 +194,7 @@ export const logos: Record<FrameworkName, string> = {
            *********************+                   
               ***************                       
 `),
-  astro: chalk.hex("#DC3E8B")(`
+  astro: chalk.hex(frameworks.astro.color)(`
                  @@@@@@@@@@@@@@@@@@@@@              
                  @@@@@@@@@@@@@@@@@@@@@@             
                 @@@@@@@@@@@@@@@@@@@@@@@@            
@@ -228,7 +228,7 @@ export const logos: Record<FrameworkName, string> = {
                           @@@@                      
                             @@@                     
   `),
-  preact: chalk.hex("#673AB8")(`                      
+  preact: chalk.hex(frameworks.preact.color)(`                      
                       XXXX                      
                    XXXXXXXXXX                   
                XXXXXXXXXXXXXXXXXX               
@@ -256,7 +256,7 @@ export const logos: Record<FrameworkName, string> = {
                    XXXXXXXXXX                   
                       XXXX                      
   `),
-  gatsby: chalk.hex("#663399")(`
+  gatsby: chalk.hex(frameworks.gatsby.color)(`
                  .:=++**####**++=-.               
            .-+*##################*+-.           
         .:*##########################*:.        
@@ -285,7 +285,7 @@ export const logos: Record<FrameworkName, string> = {
                .-=+***####***+=-.               
 
   `),
-  solid: chalk.hex("#4A80C1")(`
+  solid: chalk.hex(frameworks.solid.color)(`
                             ----                          
                    --------------------                 
                  --------------------------=            
@@ -315,7 +315,7 @@ export const logos: Record<FrameworkName, string> = {
                  ####################                   
                            ###                          
   `),
-  remix: chalk.hex("#E8F2FF")(`                                                                                                        
+  remix: chalk.hex(frameworks.remix.color)(`                                                                                                        
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                              
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                           
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         
@@ -339,7 +339,7 @@ export const logos: Record<FrameworkName, string> = {
   @@@@@@@@@@@@@@@        @@@@@@@@@@@                       
   @@@@@@@@@@@@@@         @@@@@@@@@@@                        
   `),
-  qwik: chalk.hex("#AC7Ef4")(`
+  qwik: chalk.hex(frameworks.qwik.color)(`
              ==========================           
          ======--======================         
         ========..-=====================        
@@ -369,7 +369,7 @@ export const logos: Record<FrameworkName, string> = {
                                =++++++====      
                                      =++===     
   `),
-  lit: chalk.hex("#324fff")(`
+  lit: chalk.hex(frameworks.lit.color)(`
                        *                        
                      ***                        
                    *****                        
@@ -403,5 +403,22 @@ export const logos: Record<FrameworkName, string> = {
        %####-----              =====*****       
          %##---                  ===***         
            #-                      =*           
+  `),
+  alpine: chalk.hex(frameworks.alpine.color)(`
+              %%                             =-                      
+            %%%%%%                          -----                    
+          %%%%%%%%%                      ---------                  
+        %%%%%%%%%%%%%                  -------------                
+      %%%%%%%%%%%%%%%%%              -----------------              
+    %%%%%%%%%%%%%%%%%%%%           --------------------=            
+  %%%%%%%%%%%%%%%%%%%%%%%%       =-----------------------           
+  %%%%%%%%%%%%%%%%%%%%%%%%%%     -------------------------          
+    %%%%%%%%%%%%%%%%%%%%%%%%%%     --------------------=            
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%    =-----------------              
+        %%%%%%%%%%%%%%%%%%%%%%%%%%     --------------                
+          %%%%%%%%%%%%%%%%%%%%%%%%%%     ----------=                 
+            %%%%%%%%%%%%%%%%%%%%%%%%%%     ------=                  
+              %%%%%%%%%%%%%%%%%%%%%%%%%%     ---
+                %%%%%%%%%%%%%%%%%%%%%%%%%                            
   `)
 }
