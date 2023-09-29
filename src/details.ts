@@ -27,7 +27,8 @@ export enum FrameworkName {
 	Remix = 'remix',
 	Qwik = 'qwik',
 	Lit = 'lit',
-	"Alpine.js" = "alpine"
+	"Alpine.js" = "alpine",
+	"Express" = "express"
 }
 
 
@@ -166,7 +167,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
 		author: "Caleb Porzio",
 		website: "https://alpinejs.dev",
 		initCommend: ["npm install alpinejs"]
-	}
+	},
+	express: {
+		name: "Express",
+		repo: "expressjs/express",
+		color: "#000000",
+		publishedAt: "2010-11-15T18:30:00.000Z",
+		author: "TJ Holowaychuk",
+		website: "https://expressjs.com",
+		initCommend: ["npx express-generator"]
+	},
 }
 
 export async function getDetails(framework: FrameworkName) {

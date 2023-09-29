@@ -43,6 +43,7 @@ Currently supports the following
       - Alpine
 
     - Backend:-
+      - Express
      
     - FullStack:-
       - Next
@@ -67,7 +68,6 @@ Currently displays the following details
     - Gridsome
     - Analog
     - NestJS
-    - Express
     - Nitro
     - Koa js
 

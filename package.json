@@ -21,7 +21,8 @@
     "solidjs",
     "remix",
     "qwik",
-    "lit"
+    "lit",
+    "express"
   ],
   "license": "MIT",
   "main": "dist/index.js",
