@@ -40,6 +40,8 @@ Currently supports the following
       - Remix
       - Qwik
       - Lit
+      - Alpine
+
     - Backend:-
      
     - FullStack:-
@@ -62,17 +64,18 @@ Currently displays the following details
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-    - Alpine
     - Gridsome
     - Analog
     - NestJS
     - Express
     - Nitro
+    - Koa js
 
 - Add all Runtime
     - Node.js
     - Deno
     - Bun
+    
 - Add all Build Tools/Bundler
     - Webpack
     - Vite
