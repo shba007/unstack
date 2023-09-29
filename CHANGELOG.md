@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.1.1
+
+### Patch Changes
+
+- b66c64f: Express Added
+
 ## 0.1.0
 
 ### Minor Changes
