@@ -41,6 +41,7 @@ Currently supports the following
       - Qwik
       - Lit
       - Alpine
+      - Gridsome
 
     - Backend:-
       - Express
@@ -65,7 +66,9 @@ Currently displays the following details
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-    - Gridsome
+    - Vuepress
+    - Vitepress
+    - Docus
     - Analog
     - NestJS
     - Nitro
