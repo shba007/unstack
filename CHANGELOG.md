@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.1.2
+
+### Patch Changes
+
+- 32520cd: added gridsome, added npm registry api
+
 ## 0.1.1
 
 ### Patch Changes
