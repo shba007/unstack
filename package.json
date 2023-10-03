@@ -23,7 +23,8 @@
     "qwik",
     "lit",
     "gridsome",
-    "express"
+    "express",
+    "docus"
   ],
   "license": "MIT",
   "main": "dist/index.js",
