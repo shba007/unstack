@@ -15,41 +15,47 @@ npx framework-logo@latest
 ```
 
 With argument
-``` sh
+
+```sh
 npx framework-logo@latest -f [framework]
 
 ```
+
     Options:
     -f, --framework prints the framework's logo and details
     -h, --help display help for command
 
 ## Feature
 
-Currently supports the following 
+Currently supports the following
 
 - Frameworks:-
-    - Frontend:-  
-      - Angular
-      - React
-      - Vue
-      - Svelte
-      - Astro
-      - Preact
-      - Gatsby
-      - Solid
-      - Remix
-      - Qwik
-      - Lit
-      - Alpine
-      - Gridsome
 
-    - Backend:-
-      - Express
-     
-    - FullStack:-
-      - Next
-      - Nuxt
-      - Svelte Kit
+  - Frontend:-
+
+    - Angular
+    - React
+    - Vue
+    - Svelte
+    - Astro
+    - Preact
+    - Gatsby
+    - Solid
+    - Remix
+    - Qwik
+    - Lit
+    - Alpine
+    - Gridsome
+    - Docus
+
+  - Backend:-
+
+    - Express
+
+  - FullStack:-
+    - Next
+    - Nuxt
+    - Svelte Kit
 
 Currently displays the following details
 
@@ -66,23 +72,21 @@ Currently displays the following details
 ## Vision and Roadmap
 
 - Include all framework's Icons of JS Ecosystem
-    - Vuepress
-    - Vitepress
-    - Docus
-    - Analog
-    - NestJS
-    - Nitro
-    - Koa js
+
+  - Vuepress
+  - Vitepress
+  - Analog
+  - NestJS
+  - Nitro
+  - Koa js
 
 - Add all Runtime
-    - Node.js
-    - Deno
-    - Bun
-    
+  - Node.js
+  - Deno
+  - Bun
 - Add all Build Tools/Bundler
-    - Webpack
-    - Vite
-    - Rollup
-    - Parcel
-    - Snowpack
-
+  - Webpack
+  - Vite
+  - Rollup
+  - Parcel
+  - Snowpack
