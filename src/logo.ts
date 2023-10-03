@@ -2,9 +2,7 @@ import chalk from 'chalk';
 import { FrameworkName, frameworks } from './details.js';
 
 export const logos: Record<FrameworkName, string> = {
-  angular: chalk.hex(
-    frameworks.angular.color
-  )(`                                                
+  angular: chalk.hex(frameworks.angular.color)(`                                                
                  ##########                   
             ####################              
        ##############*###############         
@@ -27,9 +25,7 @@ export const logos: Record<FrameworkName, string> = {
               ##############                 
                   ######                         
     `),
-  react: chalk.hex(
-    frameworks.react.color
-  )(`                                                                                                                           
+  react: chalk.hex(frameworks.react.color)(`                                                                                                                           
                ######                ######
              ###     ####        ####     ###
             ##          ###    ###          ##
@@ -323,9 +319,7 @@ export const logos: Record<FrameworkName, string> = {
                  ####################                   
                            ###                          
   `),
-  remix: chalk.hex(
-    frameworks.remix.color
-  )(`                                                                                                        
+  remix: chalk.hex(frameworks.remix.color)(`                                                                                                        
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                              
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                           
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         

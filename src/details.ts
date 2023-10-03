@@ -213,8 +213,8 @@ export const frameworks: Record<FrameworkName, Framework> = {
     repo: 'nuxt-themes/docus',
     pkg: '@nuxt-themes/docus',
     color: '#E8F2FF',
-    publishedAt: '2023-10-03T15:43:11.210Z',
-    author: [''],
+    publishedAt: '2020-11-11T18:30:00.000Z',
+    author: 'Sébastien Chopin',
     website: 'https://docus.dev',
     initCommend: ['npm install @nuxt-themes/docus'],
   },
@@ -226,8 +226,8 @@ function getVersion(
 ): string | undefined {
   return version
     ? `${version} (${formatDistance(parseISO(updatedAt[version]), new Date(), {
-        addSuffix: true,
-      })})`
+      addSuffix: true,
+    })})`
     : undefined;
 }
 
