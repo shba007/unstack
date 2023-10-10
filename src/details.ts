@@ -32,6 +32,7 @@ export enum FrameworkName {
   Nuxt = 'nuxt',
   'Svelte Kit' = 'svelte-kit',
   Docus = 'docus',
+  Vuepress = 'vuepress'
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -194,7 +195,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
     pkg: 'nuxt',
     color: '#00dC82',
     publishedAt: '2016-10-25T18:30:00.000Z',
-    author: ['Alexandre Chopin', 'Sebastien Chopin', 'Pooya Parsa'],
+    author: 'Sébastien Chopin',
     website: 'https://nuxt.com',
     initCommend: ['npx nuxi@latest init'],
   },
@@ -216,8 +217,18 @@ export const frameworks: Record<FrameworkName, Framework> = {
     publishedAt: '2020-11-11T18:30:00.000Z',
     author: 'Sébastien Chopin',
     website: 'https://docus.dev',
-    initCommend: ['npm install @nuxt-themes/docus'],
+    initCommend: ['npx nuxi@latest init -t themes/docus'],
   },
+  vuepress: {
+    name: 'Vuepress',
+    repo: 'vuejs/vuepress',
+    pkg: 'vuepress',
+    color: '#61BF85',
+    publishedAt: '2018-04-12T18:30:00.000Z',
+    author: 'Vue.js',
+    website: 'https://vuepress.vuejs.org',
+    initCommend: ['npx create-vuepress-site my-app']
+  }
 };
 
 function getVersion(
@@ -238,8 +249,8 @@ export async function getDetails(framework: FrameworkName) {
     frameworks[framework];
 
   const [{ repo: details }, release] = await Promise.all([
-    ofetch(`https://ungh.cc/repos/${repo}`),
-    ofetch(`https://registry.npmjs.org/${pkg}`),
+    ofetch(`/repos/${repo}`, { baseURL: 'https://ungh.cc' }),
+    ofetch(`/${pkg}`, { baseURL: 'https://registry.npmjs.org' }),
   ]);
 
   spinner.succeed('Loaded Details');
@@ -259,7 +270,7 @@ export async function getDetails(framework: FrameworkName) {
     })})`,
     version: {
       stable: getVersion(versions.latest, updatedAt),
-      experimental: getVersion(versions.next, updatedAt),
+      experimental: new Date(updatedAt[versions.next]).getTime() > new Date(updatedAt[versions.latest]).getTime() ? getVersion(versions.next, updatedAt) : undefined,
     },
     author: author,
     website: website,
