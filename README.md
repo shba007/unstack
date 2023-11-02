@@ -47,6 +47,7 @@ Currently supports the following
     - Alpine
     - Gridsome
     - Vuepress
+    - Vitepress
     - Docus
 
   - Backend:-
@@ -74,7 +75,6 @@ Currently displays the following details
 
 - Include all framework's Icons of JS Ecosystem
 
-  - Vitepress
   - Analog
   - NestJS
   - Nitro
