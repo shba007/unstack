@@ -1,5 +1,13 @@
 # framework-logo
 
+## 0.1.3
+
+### Patch Changes
+
+- 0dc9a40: feat: Added Vuepress
+- 98ee66a: added author and publish date
+- 0dc9a40: feat: added vitepress
+
 ## 0.1.2
 
 ### Patch Changes
