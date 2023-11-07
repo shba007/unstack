@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.1.4
+
+### Patch Changes
+
+- 488cfa4: feat: analogjs added
+
 ## 0.1.3
 
 ### Patch Changes
