@@ -35,6 +35,7 @@ export enum FrameworkName {
   Vitepress = 'vitepress',
   Docus = 'docus',
   'Express' = 'express',
+  NestJS = 'nestjs'
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -251,6 +252,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     website: 'https://expressjs.com',
     initCommend: ['npx express-generator'],
   },
+  nestjs: {
+    name: 'NestJS',
+    repo: 'nestjs/nest',
+    pkg: '@nestjs/core',
+    color: '#CE3951',
+    publishedAt: '2016-01-01T00:00:00.000Z',
+    author: 'Kamil Myśliwiec',
+    website: 'https://nestjs.com',
+    initCommend: [' npm i -g @nestjs/cli', 'nest new project-name']
+  }
 };
 
 function getVersion(

@@ -32,7 +32,6 @@ Currently supports the following
 - Frameworks:-
 
   - Frontend:-
-
     - Angular
     - React
     - Vue
@@ -51,13 +50,14 @@ Currently supports the following
     - Docus
 
   - Backend:-
-
     - Express
+    - NestJS
 
   - FullStack:-
     - Next
     - Nuxt
     - Svelte Kit
+    - Analog
 
 Currently displays the following details
 
@@ -75,8 +75,6 @@ Currently displays the following details
 
 - Include all framework's Icons of JS Ecosystem
 
-  - Analog
-  - NestJS
   - Nitro
   - Koa js
   - Redwood
@@ -85,6 +83,7 @@ Currently displays the following details
   - Node.js
   - Deno
   - Bun
+  
 - Add all Build Tools/Bundler
   - Webpack
   - Vite
