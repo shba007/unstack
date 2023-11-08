@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.1.5
+
+### Patch Changes
+
+- 1ee3117: feat: added nestjs
+
 ## 0.1.4
 
 ### Patch Changes
