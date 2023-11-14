@@ -52,6 +52,7 @@ Currently supports the following
   - Backend:-
     - Express
     - NestJS
+    - Feathers
 
   - FullStack:-
     - Next

@@ -27,7 +27,8 @@
     "vitepress",
     "docus",
     "express",
-    "nestjs"
+    "nestjs",
+    "feathers"
   ],
   "license": "MIT",
   "main": "dist/index.js",

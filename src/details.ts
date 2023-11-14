@@ -35,7 +35,8 @@ export enum FrameworkName {
   Vitepress = 'vitepress',
   Docus = 'docus',
   'Express' = 'express',
-  NestJS = 'nestjs'
+  'NestJS' = 'nestjs',
+  'Feathers' = 'feathers'
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -202,7 +203,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
     website: 'https://kit.svelte.dev',
     initCommend: ['npm create svelte@latest'],
   },
-  'analog': {
+  analog: {
     name: 'Analog',
     repo: 'analogjs/analog',
     pkg: '@analogjs/platform',
@@ -260,7 +261,17 @@ export const frameworks: Record<FrameworkName, Framework> = {
     publishedAt: '2016-01-01T00:00:00.000Z',
     author: 'Kamil Myśliwiec',
     website: 'https://nestjs.com',
-    initCommend: [' npm i -g @nestjs/cli', 'nest new project-name']
+    initCommend: ['npm i -g @nestjs/cli', 'nest new my-app']
+  },
+  feathers: {
+    name: "Feather",
+    repo: 'feathersjs/feathers',
+    pkg: '@feathersjs/feathers',
+    color: '#FFFFFF',
+    publishedAt: '2014-01-01T00:00:00.000Z',
+    author: '',
+    website: 'https://feathersjs.com',
+    initCommend: ['npm create feathers my-app']
   }
 };
 
