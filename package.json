@@ -10,25 +10,28 @@
     "logo",
     "angular",
     "react",
-    "vue",
+    "vuejs",
     "svelte",
-    "next",
-    "nuxt",
-    "svelte-kit",
-    "astro",
     "preact",
-    "gatsby",
     "solidjs",
     "remix",
     "qwik",
     "lit",
+    "alpinejs",
+    "analog",
+    "next",
+    "gatsby",
+    "nuxt",
     "gridsome",
+    "svelte-kit",
+    "astro",
     "vuepress",
     "vitepress",
     "docus",
     "express",
+    "feathers",
     "nestjs",
-    "feathers"
+    "nitro"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -55,7 +58,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@inquirer/prompts": "^3.2.0",
+    "@inquirer/prompts": "^3.3.0",
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
     "date-fns": "^2.30.0",
@@ -65,7 +68,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "ts-node": "^10.9.1",
-    "tsup": "^7.2.0",
+    "tsup": "^8.0.0",
     "typescript": "^5.2.2"
   }
 }

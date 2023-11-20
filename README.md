@@ -36,29 +36,30 @@ Currently supports the following
     - React
     - Vue
     - Svelte
-    - Astro
     - Preact
-    - Gatsby
     - Solid
     - Remix
     - Qwik
     - Lit
     - Alpine
-    - Gridsome
+    - Astro
     - Vuepress
     - Vitepress
     - Docus
 
   - Backend:-
     - Express
-    - NestJS
     - Feathers
+    - NestJS
+    - Nitro
 
   - FullStack:-
-    - Next
-    - Nuxt
-    - Svelte Kit
     - Analog
+    - Next
+    - Gatsby
+    - Nuxt
+    - Gridsome
+    - Svelte Kit
 
 Currently displays the following details
 
@@ -74,9 +75,9 @@ Currently displays the following details
 
 ## Vision and Roadmap
 
+- Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
 
-  - Nitro
   - Koa js
   - Redwood
 
