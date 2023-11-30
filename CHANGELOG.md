@@ -1,5 +1,12 @@
 # framework-logo
 
+## 0.1.6
+
+### Patch Changes
+
+- 532bd3e: feat: nitro framework added
+- 532bd3e: feat: feathers added
+
 ## 0.1.5
 
 ### Patch Changes
