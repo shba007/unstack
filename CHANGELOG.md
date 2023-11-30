@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.1.7
+
+### Patch Changes
+
+- 6ce38e3: feat: stencil added
+
 ## 0.1.6
 
 ### Patch Changes
