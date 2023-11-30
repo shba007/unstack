@@ -24,12 +24,7 @@ export enum FrameworkName {
   Qwik = 'qwik',
   Lit = 'lit',
   'Alpine.js' = 'alpine',
-  Analog = 'analog',
-  'Next.js' = 'next',
-  Gatsby = 'gatsby',
-  Nuxt = 'nuxt',
-  'Gridsome' = 'gridsome',
-  'Svelte Kit' = 'svelte-kit',
+  'Stencil' = 'stencil',
   Astro = 'astro',
   Vuepress = 'vuepress',
   Vitepress = 'vitepress',
@@ -37,7 +32,13 @@ export enum FrameworkName {
   'Express' = 'express',
   'Feathers' = 'feathers',
   'NestJS' = 'nestjs',
-  'Nitro' = 'nitro'
+  'Nitro' = 'nitro',
+  Analog = 'analog',
+  'Next.js' = 'next',
+  Gatsby = 'gatsby',
+  Nuxt = 'nuxt',
+  'Gridsome' = 'gridsome',
+  'Svelte Kit' = 'svelte-kit',
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -141,6 +142,96 @@ export const frameworks: Record<FrameworkName, Framework> = {
     website: 'https://alpinejs.dev',
     initCommend: ['npm install alpinejs'],
   },
+  stencil: {
+    name: 'Stencil',
+    repo: 'ionic-team/stencil',
+    pkg: '@stencil/core',
+    color: '#4942FF',
+    publishedAt: '2017-01-01T00:00:00.000Z',
+    author: 'Ionic Framework Team',
+    website: 'https://stenciljs.com',
+    initCommend: ['npm init stencil']
+  },
+  astro: {
+    name: 'Astro',
+    repo: 'withastro/astro',
+    pkg: 'astro',
+    color: '#DC3E8B',
+    publishedAt: '2022-06-07T00:00:00.000Z',
+    author: 'Fred K. Schott',
+    website: 'https://astro.build',
+    initCommend: ['npm create astro@latest'],
+  },
+  vuepress: {
+    name: 'Vuepress',
+    repo: 'vuejs/vuepress',
+    pkg: 'vuepress',
+    color: '#61BF85',
+    publishedAt: '2018-04-12T00:00:00.000Z',
+    author: 'Vue.js',
+    website: 'https://vuepress.vuejs.org',
+    initCommend: ['npx create-vuepress-site my-app']
+  },
+  vitepress: {
+    name: 'Vitepress',
+    repo: 'vuejs/vitepress',
+    pkg: 'vitepress',
+    color: '#837EFF',
+    publishedAt: '2020-04-30T00:00:00.000Z',
+    author: 'Evan You',
+    website: 'https://vitepress.dev',
+    initCommend: ['npm add -D vitepress']
+  },
+  docus: {
+    name: 'Docus',
+    repo: 'nuxt-themes/docus',
+    pkg: '@nuxt-themes/docus',
+    color: '#E8F2FF',
+    publishedAt: '2020-11-11T00:00:00.000Z',
+    author: 'Sébastien Chopin',
+    website: 'https://docus.dev',
+    initCommend: ['npx nuxi@latest init -t themes/docus'],
+  },
+  express: {
+    name: 'Express',
+    repo: 'expressjs/express',
+    pkg: 'express',
+    color: '#000000',
+    publishedAt: '2010-12-29T19:38:25.450Z',
+    author: 'TJ Holowaychuk',
+    website: 'https://expressjs.com',
+    initCommend: ['npx express-generator'],
+  },
+  feathers: {
+    name: "Feather",
+    repo: 'feathersjs/feathers',
+    pkg: '@feathersjs/feathers',
+    color: '#FFFFFF',
+    publishedAt: '2017-10-20T23:40:48.540Z',
+    author: '',
+    website: 'https://feathersjs.com',
+    initCommend: ['npm create feathers my-app']
+  },
+  nestjs: {
+    name: 'NestJS',
+    repo: 'nestjs/nest',
+    pkg: '@nestjs/core',
+    color: '#CE3951',
+    publishedAt: '2017-05-14T13:40:50.632Z',
+    author: 'Kamil Myśliwiec',
+    website: 'https://nestjs.com',
+    initCommend: ['npm i -g @nestjs/cli', 'nest new my-app']
+  },
+  nitro: {
+    name: 'Nitro',
+    repo: 'unjs/nitro',
+    pkg: 'nitropack',
+    color: '#F478CF',
+    publishedAt: '2021-11-04T11:43:49.855Z',
+    author: 'Pooya Parsa',
+    website: 'https://nitro.unjs.io',
+    initCommend: ['npx giget@latest nitro', 'cd nitro-app', 'npm install']
+  },
   analog: {
     name: 'Analog',
     repo: 'analogjs/analog',
@@ -204,87 +295,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
     website: 'https://kit.svelte.dev',
     initCommend: ['npm create svelte@latest'],
   },
-  astro: {
-    name: 'Astro',
-    repo: 'withastro/astro',
-    pkg: 'astro',
-    color: '#DC3E8B',
-    publishedAt: '2022-06-07T00:00:00.000Z',
-    author: 'Fred K. Schott',
-    website: 'https://astro.build',
-    initCommend: ['npm create astro@latest'],
-  },
-  vuepress: {
-    name: 'Vuepress',
-    repo: 'vuejs/vuepress',
-    pkg: 'vuepress',
-    color: '#61BF85',
-    publishedAt: '2018-04-12T00:00:00.000Z',
-    author: 'Vue.js',
-    website: 'https://vuepress.vuejs.org',
-    initCommend: ['npx create-vuepress-site my-app']
-  },
-  vitepress: {
-    name: 'Vitepress',
-    repo: 'vuejs/vitepress',
-    pkg: 'vitepress',
-    color: '#837EFF',
-    publishedAt: '2020-04-30T00:00:00.000Z',
-    author: 'Evan You',
-    website: 'https://vitepress.dev',
-    initCommend: ['npm add -D vitepress']
-  },
-  docus: {
-    name: 'Docus',
-    repo: 'nuxt-themes/docus',
-    pkg: '@nuxt-themes/docus',
-    color: '#E8F2FF',
-    publishedAt: '2020-11-11T00:00:00.000Z',
-    author: 'Sébastien Chopin',
-    website: 'https://docus.dev',
-    initCommend: ['npx nuxi@latest init -t themes/docus'],
-  },
   /* ------------- Published At Updated till here ------------ */
-  express: {
-    name: 'Express',
-    repo: 'expressjs/express',
-    pkg: 'express',
-    color: '#000000',
-    publishedAt: '2010-12-29T19:38:25.450Z',
-    author: 'TJ Holowaychuk',
-    website: 'https://expressjs.com',
-    initCommend: ['npx express-generator'],
-  },
-  feathers: {
-    name: "Feather",
-    repo: 'feathersjs/feathers',
-    pkg: '@feathersjs/feathers',
-    color: '#FFFFFF',
-    publishedAt: '2017-10-20T23:40:48.540Z',
-    author: '',
-    website: 'https://feathersjs.com',
-    initCommend: ['npm create feathers my-app']
-  },
-  nestjs: {
-    name: 'NestJS',
-    repo: 'nestjs/nest',
-    pkg: '@nestjs/core',
-    color: '#CE3951',
-    publishedAt: '2017-05-14T13:40:50.632Z',
-    author: 'Kamil Myśliwiec',
-    website: 'https://nestjs.com',
-    initCommend: ['npm i -g @nestjs/cli', 'nest new my-app']
-  },
-  nitro: {
-    name: 'Nitro',
-    repo: 'unjs/nitro',
-    pkg: 'nitropack',
-    color: '#F478CF',
-    publishedAt: '2021-11-04T11:43:49.855Z',
-    author: 'Pooya Parsa',
-    website: 'https://nitro.unjs.io',
-    initCommend: ['npx giget@latest nitro', 'cd nitro-app', 'npm install']
-  }
 };
 
 function getVersion(

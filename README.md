@@ -42,6 +42,7 @@ Currently supports the following
     - Qwik
     - Lit
     - Alpine
+    - Stencil
     - Astro
     - Vuepress
     - Vitepress
@@ -80,6 +81,8 @@ Currently displays the following details
 
   - Koa js
   - Redwood
+  - Mithril
+  - Fresh
 
 - Add all Runtime
   - Node.js
