@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.1.8
+
+### Patch Changes
+
+- e1836c4: feat: added mithril
+
 ## 0.1.7
 
 ### Patch Changes
