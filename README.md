@@ -2,10 +2,12 @@
 
 > :printer: Print your favorite framework's logo and details into the cli.
 
+[![npm Version](https://img.shields.io/npm/v/framework-logo.svg)](https://www.npmjs.com/package/framework-logo) &nbsp;
+[![npm Downloads](https://img.shields.io/npm/dm/framework-logo.svg)](https://www.npmjs.com/package/framework-logo) &nbsp;
+[![License](https://img.shields.io/npm/l/framework-logo.svg)](https://github.com/shba007/framework-logo?tab=MIT-1-ov-file) &nbsp;
+
 <p align="center">
-    <br>
     <img src="assets/screenshot.webp" width="500">
-    <br>
 </p>
 
 ## Usage
@@ -43,6 +45,7 @@ Currently supports the following
     - Lit
     - Alpine
     - Stencil
+    - Mithril
     - Astro
     - Vuepress
     - Vitepress
@@ -79,10 +82,9 @@ Currently displays the following details
 - Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
 
+  - Fresh
   - Koa js
   - Redwood
-  - Mithril
-  - Fresh
 
 - Add all Runtime
   - Node.js

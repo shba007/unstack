@@ -25,6 +25,7 @@ export enum FrameworkName {
   Lit = 'lit',
   'Alpine.js' = 'alpine',
   'Stencil' = 'stencil',
+  'Mithril' = 'mithril',
   Astro = 'astro',
   Vuepress = 'vuepress',
   Vitepress = 'vitepress',
@@ -47,7 +48,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
     repo: 'angular/angular',
     pkg: '@angular/core',
     color: '#DD0032',
-    publishedAt: '2016-09-13T00:00:00.000Z',
+    publishedAt: '2016-04-28T04:23:30.108Z',
     author: 'Google',
     website: 'https://angular.io',
     initCommend: ['npm install -g @angular/cli', 'ng new'],
@@ -57,7 +58,7 @@ export const frameworks: Record<FrameworkName, Framework> = {
     repo: 'facebook/react',
     pkg: 'react',
     color: '#149ECA',
-    publishedAt: '2013-05-28T00:00:00.000Z',
+    publishedAt: '2011-10-26T17:46:22.746Z',
     author: 'Facebook',
     website: 'https://react.dev',
     initCommend: ['npm create vite@latest -- --template react'],
@@ -67,11 +68,12 @@ export const frameworks: Record<FrameworkName, Framework> = {
     repo: 'vuejs/core',
     pkg: 'vue',
     color: '#40B983',
-    publishedAt: '2014-01-31T00:00:00.000Z',
+    publishedAt: '2013-12-07T06:09:48.297Z',
     author: 'Evan You',
     website: 'https://vuejs.org',
     initCommend: ['npm create vue@latest'],
   },
+  /* ------------- Published At Updated till here ------------ */
   svelte: {
     name: 'Svelte',
     repo: 'sveltejs/svelte',
@@ -151,6 +153,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'Ionic Framework Team',
     website: 'https://stenciljs.com',
     initCommend: ['npm init stencil']
+  },
+  mithril: {
+    name: 'Mithril',
+    repo: 'MithrilJS/mithril.js',
+    pkg: 'mithril',
+    color: '#000000',
+    publishedAt: '2014-04-02T02:27:07.149Z',
+    author: 'Leo Horie',
+    website: 'https://mithril.js.org',
+    initCommend: ['npm init -y', 'npm install mithril --save']
   },
   astro: {
     name: 'Astro',
@@ -295,7 +307,6 @@ export const frameworks: Record<FrameworkName, Framework> = {
     website: 'https://kit.svelte.dev',
     initCommend: ['npm create svelte@latest'],
   },
-  /* ------------- Published At Updated till here ------------ */
 };
 
 function getVersion(

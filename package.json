@@ -67,9 +67,9 @@
     "ora": "^7.0.1"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "ts-node": "^10.9.1",
-    "tsup": "^8.0.0",
-    "typescript": "^5.2.2"
+    "@changesets/cli": "^2.27.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
   }
 }
