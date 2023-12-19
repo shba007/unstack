@@ -64,6 +64,7 @@ Currently supports the following
     - Nuxt
     - Gridsome
     - Svelte Kit
+    - Fresh
 
 Currently displays the following details
 
@@ -82,7 +83,6 @@ Currently displays the following details
 - Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
 
-  - Fresh
   - Koa js
   - Redwood
 
