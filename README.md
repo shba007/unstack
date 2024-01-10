@@ -1,14 +1,16 @@
+<p align="center">
+  <img src="./assets/logo.png" lt="Logo" width="80" />
+<p>
+
 # Framework Logo
 
 > :printer: Print your favorite framework's logo and details into the cli.
 
+![Screenshot](assets/screenshot.webp)
+
 [![npm Version](https://img.shields.io/npm/v/framework-logo.svg)](https://www.npmjs.com/package/framework-logo) &nbsp;
 [![npm Downloads](https://img.shields.io/npm/dm/framework-logo.svg)](https://www.npmjs.com/package/framework-logo) &nbsp;
 [![License](https://img.shields.io/npm/l/framework-logo.svg)](https://github.com/shba007/framework-logo?tab=MIT-1-ov-file) &nbsp;
-
-<p align="center">
-    <img src="assets/screenshot.webp" width="500">
-</p>
 
 ## Usage
 
@@ -64,6 +66,7 @@ Currently supports the following
     - Nuxt
     - Gridsome
     - Svelte Kit
+    - Ember js
     - Fresh
 
 Currently displays the following details
@@ -85,6 +88,8 @@ Currently displays the following details
 
   - Koa js
   - Redwood
+  - Meteor
+  - Adonis JS
 
 - Add all Runtime
   - Node.js

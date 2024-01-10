@@ -40,6 +40,7 @@ export enum FrameworkName {
   Nuxt = 'nuxt',
   'Gridsome' = 'gridsome',
   'Svelte Kit' = 'svelte-kit',
+  'Ember' = 'ember',
   'Fresh' = 'fresh'
 }
 
@@ -306,6 +307,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'Rich Harris',
     website: 'https://kit.svelte.dev',
     initCommend: ['npm create svelte@latest'],
+  },
+  ember: {
+    name: 'Ember',
+    repo: 'emberjs/ember.js',
+    pkg: 'ember-source',
+    color: '#E04E3A',
+    publishedAt: '2016-10-07T19:46:37.587Z',
+    author: 'Yehuda Katz',
+    website: 'https://emberjs.com',
+    initCommend: ['npm install -g ember-cli', 'ember new my-app --lang en']
   },
   fresh: {
     name: 'Fresh',
