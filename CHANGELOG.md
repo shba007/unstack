@@ -1,5 +1,15 @@
 # framework-logo
 
+## 0.2.0
+
+### Minor Changes
+
+- c450c83: feat: ember.js added
+
+### Patch Changes
+
+- e553d6f: feat: fresh added & date fixed
+
 ## 0.1.8
 
 ### Patch Changes
