@@ -55,6 +55,7 @@ Currently supports the following
 
   - Backend:-
     - Express
+    - Koa
     - Feathers
     - NestJS
     - Nitro
@@ -86,7 +87,6 @@ Currently displays the following details
 - Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
 
-  - Koa js
   - Redwood
   - Meteor
   - Adonis JS
