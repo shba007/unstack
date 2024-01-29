@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.2.1
+
+### Patch Changes
+
+- 59a6033: feat: koa added
+
 ## 0.2.0
 
 ### Minor Changes
