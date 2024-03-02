@@ -42,7 +42,8 @@ export enum FrameworkName {
   Gridsome = 'gridsome',
   'Svelte Kit' = 'svelte-kit',
   Ember = 'ember',
-  Fresh = 'fresh'
+  Fresh = 'fresh',
+  Redwood = 'redwood'
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -338,6 +339,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'Luca Casonato',
     website: 'https://fresh.deno.dev',
     initCommend: ['deno run -A -r https://fresh.deno.dev'],
+  },
+  redwood: {
+    name: 'Redwood',
+    repo: 'redwoodjs/redwood',
+    pkg: 'create-redwood-app',
+    color: '#BF4722',
+    publishedAt: '2020-01-15T20:08:35.633Z',
+    author: 'Ryan Chenkie',
+    website: 'https://redwoodjs.com',
+    initCommend: ['npm create redwood-app my-app']
   }
 };
 

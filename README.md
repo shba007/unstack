@@ -80,14 +80,13 @@ Currently displays the following details
 - Version
 - GitHub Link
 - Website Link
-- Init Commend
+- Init Command
 
 ## Vision and Roadmap
 
 - Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
 
-  - Redwood
   - Meteor
   - Adonis JS
 
