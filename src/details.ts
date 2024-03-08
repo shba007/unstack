@@ -43,7 +43,8 @@ export enum FrameworkName {
   'Svelte Kit' = 'svelte-kit',
   Ember = 'ember',
   Fresh = 'fresh',
-  Redwood = 'redwood'
+  Redwood = 'redwood',
+  Meteor = 'meteor'
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -349,6 +350,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'Ryan Chenkie',
     website: 'https://redwoodjs.com',
     initCommend: ['npm create redwood-app my-app']
+  },
+  meteor: {
+    name: 'Meteor',
+    repo: 'meteor/meteor',
+    pkg: 'meteor',
+    color: '#F87171',
+    publishedAt: '2012-11-30T01:32:01.761Z',
+    author: 'Tom Coleman, Sacha Greif, Isaac Strack',
+    website: 'https://www.meteor.com',
+    initCommend: ['npm i -g meteor', 'meteor create']
   }
 };
 

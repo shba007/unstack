@@ -52,6 +52,7 @@ Currently supports the following
     - Vuepress
     - Vitepress
     - Docus
+    - Meteor
 
   - Backend:-
     - Express
@@ -69,6 +70,7 @@ Currently supports the following
     - Svelte Kit
     - Ember js
     - Fresh
+    - Redwood
 
 Currently displays the following details
 
@@ -87,7 +89,6 @@ Currently displays the following details
 - Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
 
-  - Meteor
   - Adonis JS
 
 - Add all Runtime
