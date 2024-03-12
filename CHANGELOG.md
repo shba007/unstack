@@ -1,5 +1,12 @@
 # framework-logo
 
+## 0.2.2
+
+### Patch Changes
+
+- eb4a847: feat: meteor js added
+- 3265b22: feat: added redwood
+
 ## 0.2.1
 
 ### Patch Changes
