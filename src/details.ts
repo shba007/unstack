@@ -44,7 +44,8 @@ export enum FrameworkName {
   Ember = 'ember',
   Fresh = 'fresh',
   Redwood = 'redwood',
-  Meteor = 'meteor'
+  Meteor = 'meteor',
+  Hydrogen = 'hydrogen'
 }
 
 export const frameworks: Record<FrameworkName, Framework> = {
@@ -360,6 +361,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'Tom Coleman, Sacha Greif, Isaac Strack',
     website: 'https://www.meteor.com',
     initCommend: ['npm i -g meteor', 'meteor create']
+  },
+  hydrogen: {
+    name: 'Hydrogen',
+    repo: 'Shopify/hydrogen',
+    pkg: '@shopify/hydrogen',
+    color: '#6127f3',
+    publishedAt: '2021-08-16T14:42:27.228Z',
+    author: '',
+    website: 'https://hydrogen.shopify.dev',
+    initCommend: ['npm create @shopify/hydrogen@latest']
   }
 };
 

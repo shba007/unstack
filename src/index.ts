@@ -4,8 +4,8 @@ import { program } from 'commander';
 import { select } from '@inquirer/prompts';
 import chalk from 'chalk';
 
-import { logos } from './logo.js'
-import { FrameworkName, frameworks, getDetails } from './details.js';
+import { logos } from './logo.ts'
+import { FrameworkName, frameworks, getDetails } from './details.ts';
 
 async function getFramework(framework: FrameworkName) {
   framework = framework.toLowerCase() as FrameworkName

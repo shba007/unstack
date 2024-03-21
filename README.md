@@ -71,6 +71,7 @@ Currently supports the following
     - Ember js
     - Fresh
     - Redwood
+    - Hydrogen
 
 Currently displays the following details
 
@@ -90,6 +91,10 @@ Currently displays the following details
 - Include all framework's Icons of JS Ecosystem
 
   - Adonis JS
+  - Fastify
+  - Django
+  - Flask
+  - FastAPI
 
 - Add all Runtime
   - Node.js
