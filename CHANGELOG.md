@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.2.3
+
+### Patch Changes
+
+- 81bf6ca: feat: hydrogen added
+
 ## 0.2.2
 
 ### Patch Changes
