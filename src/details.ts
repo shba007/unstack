@@ -31,6 +31,7 @@ export enum FrameworkName {
   Vitepress = 'vitepress',
   Docus = 'docus',
   Express = 'express',
+  Fastify = 'fastify',
   Koa = 'koa',
   Feathers = 'feathers',
   NestJS = 'nestjs',
@@ -218,6 +219,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'TJ Holowaychuk',
     website: 'https://expressjs.com',
     initCommend: ['npx express-generator'],
+  },
+  fastify: {
+    name: 'Fastify',
+    repo: 'fastify/fastify',
+    pkg: 'fastify',
+    color: '#000000',
+    publishedAt: '2018-01-08T10:33:49.228Z',
+    author: 'Matteo Collina',
+    website: 'https://fastify.dev',
+    initCommend: ['npm install -g fastify-cli', 'fastify generate myproject']
   },
   koa: {
     name: 'Koa',

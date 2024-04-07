@@ -56,6 +56,7 @@ Currently supports the following
 
   - Backend:-
     - Express
+    - Fastify
     - Koa
     - Feathers
     - NestJS
@@ -91,7 +92,6 @@ Currently displays the following details
 - Include all framework's Icons of JS Ecosystem
 
   - Adonis JS
-  - Fastify
   - Django
   - Flask
   - FastAPI

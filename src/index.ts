@@ -11,7 +11,7 @@ async function getFramework(framework: FrameworkName) {
   framework = framework.toLowerCase() as FrameworkName
 
   if (framework in logos) {
-    console.log(logos[framework])
+    console.log(chalk.hex(frameworks[framework].color)(logos[framework]))
     console.log(await getDetails(framework))
   }
   else

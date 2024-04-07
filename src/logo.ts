@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { FrameworkName, frameworks } from './details.js';
 
 export const logos: Record<FrameworkName, string> = {
-  angular: chalk.hex(frameworks.angular.color)(`                                                
+  angular: `                                                
                 ##########                   
           ####################              
       ##############*###############         
@@ -24,8 +24,8 @@ export const logos: Record<FrameworkName, string> = {
           ####################              
             ##############                 
                 ######                         
-  `),
-  react: chalk.hex(frameworks.react.color)(`                                                                                                                           
+  `,
+  react: `                                                                                                                           
                 ######                ######
               ###     ####        ####     ###
               ##          ###    ###          ##
@@ -51,8 +51,8 @@ export const logos: Record<FrameworkName, string> = {
               ##          ###    ###          ##
               ###     ####        ####     ###
                 ######                ######                                                                                                                                                 
-  `),
-  vue: chalk.hex(frameworks.vue.color)(`
+  `,
+  vue: `
   =========+#########*        *#########+=========
   =========+*########*      *########*+========+ 
     =========+*########*    *########*+=========  
@@ -75,8 +75,8 @@ export const logos: Record<FrameworkName, string> = {
                       ======                     
                         +==+                      
                         ==                       
-  `),
-  svelte: chalk.hex(frameworks.svelte.color)(`                       
+  `,
+  svelte: `                       
                           ***************          
                       **********************       
                   ***************************     
@@ -108,8 +108,8 @@ export const logos: Record<FrameworkName, string> = {
         **************************                 
           *********************+                   
             ***************                       
-  `),
-  preact: chalk.hex(frameworks.preact.color)(`                      
+  `,
+  preact: `                      
                     XXXX                      
                   XXXXXXXXXX                   
               XXXXXXXXXXXXXXXXXX               
@@ -136,8 +136,8 @@ export const logos: Record<FrameworkName, string> = {
               XXXXXXXXXXXXXXXXXX               
                   XXXXXXXXXX                   
                       XXXX                      
-  `),
-  solid: chalk.hex(frameworks.solid.color)(`
+  `,
+  solid: `
                             ----                          
                    --------------------                 
                  --------------------------=            
@@ -166,8 +166,8 @@ export const logos: Record<FrameworkName, string> = {
              ##########################                 
                  ####################                   
                            ###                          
-  `),
-  remix: chalk.hex(frameworks.remix.color)(`                                                                                                        
+  `,
+  remix: `                                                                                                        
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@                              
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                           
   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         
@@ -190,8 +190,8 @@ export const logos: Record<FrameworkName, string> = {
   @@@@@@@@@@@@@@         @@@@@@@@@@@                        
   @@@@@@@@@@@@@@@        @@@@@@@@@@@                       
   @@@@@@@@@@@@@@         @@@@@@@@@@@                        
-  `),
-  qwik: chalk.hex(frameworks.qwik.color)(`
+  `,
+  qwik: `
             ==========================           
           ======--======================         
           ========..-=====================        
@@ -220,8 +220,8 @@ export const logos: Record<FrameworkName, string> = {
                           ++=++++++++=====       
                                 =++++++====      
                                       =++===     
-  `),
-  lit: chalk.hex(frameworks.lit.color)(`
+  `,
+  lit: `
                         *                        
                       ***                        
                     *****                        
@@ -255,8 +255,8 @@ export const logos: Record<FrameworkName, string> = {
         %####-----              =====*****       
           %##---                  ===***         
             #-                      =*           
-  `),
-  alpine: chalk.hex(frameworks.alpine.color)(`
+  `,
+  alpine: `
               %%                             =-                      
             %%%%%%                          -----                    
           %%%%%%%%%                      ---------                  
@@ -272,8 +272,8 @@ export const logos: Record<FrameworkName, string> = {
             %%%%%%%%%%%%%%%%%%%%%%%%%%     ------=                  
               %%%%%%%%%%%%%%%%%%%%%%%%%%     ---
                 %%%%%%%%%%%%%%%%%%%%%%%%%                            
-  `),
-  stencil: chalk.hex(frameworks.stencil.color)(`
+  `,
+  stencil: `
                         #####################        
                     #####################          
                     ####################            
@@ -294,8 +294,8 @@ export const logos: Record<FrameworkName, string> = {
               %%%%%%%%%%%%%%%%%%%%                  
             %%%%%%%%%%%%%%%%%%%%%                   
           %%%%%%%%%%%%%%%%%%%%%                     
-  `),
-  mithril: chalk.hex(frameworks.mithril.color)(`
+  `,
+  mithril: `
        .:=#@@@@@@@@@@@@#*%@@@@@@@@@@@%+-.         
      .-#@@%*-:..  ..-#@@@@@=..  ...-+#@@%=..      
    ..*@@#-.       .=%@%=-#@@*.       .:+%@%-.     
@@ -318,8 +318,8 @@ export const logos: Record<FrameworkName, string> = {
             .-#@@#=:..     .:=*@@%=.              
               .-+%@@@%####%@@@%*-.                
                  ..-=+*****+-:.                   
-  `),
-  astro: chalk.hex(frameworks.astro.color)(`
+  `,
+  astro: `
                 @@@@@@@@@@@@@@@@@@@@@              
                 @@@@@@@@@@@@@@@@@@@@@@             
               @@@@@@@@@@@@@@@@@@@@@@@@            
@@ -352,8 +352,8 @@ export const logos: Record<FrameworkName, string> = {
                         @@@@@@                     
                         @@@@                      
                           @@@                     
-  `),
-  vuepress: chalk.hex(frameworks.vuepress.color)(`
+  `,
+  vuepress: `
                     :.......   .              
         :.......                 .             
         ..                       .             
@@ -378,8 +378,8 @@ export const logos: Record<FrameworkName, string> = {
         &&$$$$$$$$$$$$$$$&&&&&&&               
         &$$$$$$&&&&&&&                        
           &&&&&                                
-  `),
-  vitepress: chalk.hex(frameworks.vitepress.color)(`                                          
+  `,
+  vitepress: `                                          
                                 ===+               
                     =============--:===             
       =========-----::..............=+             
@@ -407,8 +407,8 @@ export const logos: Record<FrameworkName, string> = {
         ######*######%%%%%%%%%%%%%%%%%%%@           
         @##########%%%%%%%%%@@@@@@@@@               
         @@%%%%@@@@@@@@                                                                                          
-  `),
-  docus: chalk.hex(frameworks.docus.color)(`
+  `,
+  docus: `
                     --++####+++-                  
               .####################-             
             -##########################-          
@@ -435,8 +435,8 @@ export const logos: Record<FrameworkName, string> = {
   +####################################-          
   +#################################-             
   -##########################++-                           
-  `),
-  express: chalk.hex(frameworks.express.color)(`       
+  `,
+  express: `       
         ..:=+++++-..       ....               ....
       .=%@@#+--=*@@%+.     .*@%-             -%@=.
     .+@@=...     ..-@@+     .-@@=.          *@%:. 
@@ -453,8 +453,26 @@ export const logos: Record<FrameworkName, string> = {
     :#@%.         ..*@%.    .%@+.           .%@*. 
       :#@@%+---=*@@@#:.   .=@%=              .+@@-
         ..-+****+-..      .:..                ..::                           
-  `),
-  koa: chalk.hex(frameworks.koa.color)(`                                                                         
+  `,
+  fastify: `                                                 
+                               ####      ####### 
+               ################################# 
+            ###################################  
+          ##############################         
+         ########################       #####    
+        ######### ###########################    
+      ######## #############################     
+   ####################################          
+ ####################### ########       ##       
+  ########################################       
+ ###########     ########################        
+  ########        ####################           
+         #        #############                  
+            #  ###########                       
+            ###########                          
+            ########                             
+`,
+  koa: `                                                                         
   =**:                                                                                                      
   +%%-                                                                                                      
   +%%-                                                                                                      
@@ -473,8 +491,8 @@ export const logos: Record<FrameworkName, string> = {
   +%%-    .=%%=      .*%#.           .#%=.  .*%%-         +%%=                                              
   +%%-     .:%%#.     .=%#          -%#.     .#%#.       -+%%=                                              
   +%%-       .#%%.       .##:.. ..=#+         .+%#.. ..+. .=##...           
-  `),
-  feathers: chalk.hex(frameworks.feathers.color)(`
+  `,
+  feathers: `
                       @@@@@@@@@@@@@@@@@@                   
                 @@@@@@@@@@@      @@@@@@@@@@@              
             @@@@@@@                    @@@@@@@           
@@ -505,8 +523,8 @@ export const logos: Record<FrameworkName, string> = {
             @@@@@@@@                  @@@@@@@@           
                 @@@@@@@@@@@@@  @@@@@@@@@@@@@              
                     @@@@@@@@@@@@@@@@@@                   
-  `),
-  nestjs: chalk.hex(frameworks.nestjs.color)(`
+  `,
+  nestjs: `
                                  ****                     
                                 ********                
                                 **********              
@@ -536,8 +554,8 @@ export const logos: Record<FrameworkName, string> = {
                                ********  ***            
                              *******    *               
                           *******                       
-  `),
-  nitro: chalk.hex(frameworks.nitro.color)(`
+  `,
+  nitro: `
                   ===========-======               
             ===============--=========           
           =================--===========         
@@ -564,8 +582,8 @@ export const logos: Record<FrameworkName, string> = {
           -:::::::::::::::::::::::::::::         
             -:::::::::::::::::::::::::           
                 ::::::::::::::::::               
-  `),
-  analog: chalk.hex(frameworks.analog.color)(`          
+  `,
+  analog: `          
                                   ##                                            
                                   ###                                           
                                 ######                                          
@@ -588,8 +606,8 @@ export const logos: Record<FrameworkName, string> = {
     ####################=*-##################*+*+#######                        
     #####################+=####################==#########                       
   ##########################################################                                          
-  `),
-  next: chalk.hex(frameworks.next.color)(`               
+  `,
+  next: `               
                   @@@@@@@@@@@@@@@@@@               
               @@@@@@@@@@@@@@@@@@@@@@@@@@           
             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         
@@ -616,8 +634,8 @@ export const logos: Record<FrameworkName, string> = {
           @@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@         
               @@@@@@@@@@@@@@@@@@@@@@@@@            
                   @@@@@@@@@@@@@@@@@@               
-  `),
-  gatsby: chalk.hex(frameworks.gatsby.color)(`
+  `,
+  gatsby: `
                   .:=++**####**++=-.               
             .-+*##################*+-.           
           .:*##########################*:.        
@@ -644,8 +662,8 @@ export const logos: Record<FrameworkName, string> = {
           .:############################:.        
             .-+*##################**-.           
                 .-=+***####***+=-.               
-  `),
-  nuxt: chalk.hex(frameworks.nuxt.color)(`                                                       
+  `,
+  nuxt: `                                                       
                   =======                                           
                   =========                                          
                 ==========+                                         
@@ -667,8 +685,8 @@ export const logos: Record<FrameworkName, string> = {
   ==========================        ======================            
     =======================         ======================            
       =+=============+==            ===================+                                                                  
-  `),
-  gridsome: chalk.hex(frameworks.gridsome.color)(`
+  `,
+  gridsome: `
                     ===========                     
               ================                    
           ===================                    
@@ -694,8 +712,8 @@ export const logos: Record<FrameworkName, string> = {
           +++++++++++++++++++***********         
               ++++++++++++++++********            
                   ++++++++++*****                 
-  `),
-  'svelte-kit': chalk.hex(frameworks['svelte-kit'].color)(`                       
+  `,
+  'svelte-kit': `                       
                           ***************          
                       **********************       
                   ***************************     
@@ -727,8 +745,8 @@ export const logos: Record<FrameworkName, string> = {
         **************************                 
           *********************+                   
             ***************                       
-  `),
-  ember: chalk.hex(frameworks.ember.color)(`                                
+  `,
+  ember: `                                
                             ++++++++++*                             
                         ++++++++++++++++++                          
                       ++++++++++++++++++++++                        
@@ -754,8 +772,8 @@ export const logos: Record<FrameworkName, string> = {
                     +++++++++++++++++++++++++*                      
                       *++++++++++++++++++                           
                               +++*                                                                       
-  `),
-  fresh: chalk.hex(frameworks.fresh.color)(`                                                  
+  `,
+  fresh: `                                                  
                           ...........      
                      ......:::....::...    
                  ....::..............::..  
@@ -775,8 +793,8 @@ export const logos: Record<FrameworkName, string> = {
     ..:.   .:::::::::::::::::::::::..      
      ..:...:.:::::::::::::::::::::..       
        ............................       
-  `),
-  redwood: chalk.hex(frameworks.redwood.color)(`                                                  
+  `,
+  redwood: `                                                  
                       ======                      
                    ============                   
                 ==================                
@@ -802,8 +820,8 @@ export const logos: Record<FrameworkName, string> = {
                   ==============                  
                     ==========                    
                        ====                       
-  `),
-  meteor: chalk.hex(frameworks.meteor.color)(`
+  `,
+  meteor: `
   +                                              
   ++                                            
     ++       +                                  
@@ -829,8 +847,8 @@ export const logos: Record<FrameworkName, string> = {
                     ++  ++++   +++++    ++++    
                      ++   ++++  ++++++   ++     
                             +++   ++++          
-  `),
-  hydrogen: chalk.hex(frameworks.hydrogen.color)(`          
+  `,
+  hydrogen: `          
                     .  .-**:.                     
                    .:+########=..                 
                     .*##########%#-. .            
@@ -853,5 +871,5 @@ export const logos: Record<FrameworkName, string> = {
                 .*@@@@@@@@@@@@#.                  
                    .-#@@@@@@@@*.                  
                        .+@%:                                           
-  `)
+  `
 };

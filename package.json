@@ -26,6 +26,7 @@
     "docus",
     "meteor",
     "express",
+    "fastify",
     "koa",
     "feathers",
     "nestjs",
