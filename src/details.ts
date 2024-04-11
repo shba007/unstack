@@ -23,6 +23,7 @@ export enum FrameworkName {
   Remix = 'remix',
   Qwik = 'qwik',
   Lit = 'lit',
+  Tini = 'tinijs',
   'Alpine.js' = 'alpine',
   Stencil = 'stencil',
   Mithril = 'mithril',
@@ -139,6 +140,16 @@ export const frameworks: Record<FrameworkName, Framework> = {
     author: 'Kevin Christiansen',
     website: 'https://lit.dev',
     initCommend: ['npm init @open-wc', 'npm i lit'],
+  },
+  tinijs: {
+    name: 'Tini',
+    repo: 'tinijs/tinijs',
+    pkg: '@tinijs/cli',
+    color: '#36C9C3',
+    publishedAt: '2023-01-04T04:21:37.561Z',
+    author: 'Nhan Lam',
+    website: 'https://tinijs.dev',
+    initCommend: ['npx @tinijs/cli new my-app -l']
   },
   alpine: {
     name: 'Alpine.js',

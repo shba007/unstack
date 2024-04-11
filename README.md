@@ -45,6 +45,7 @@ Currently supports the following
     - Remix
     - Qwik
     - Lit
+    - TiniJS
     - Alpine
     - Stencil
     - Mithril

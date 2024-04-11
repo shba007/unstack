@@ -256,6 +256,41 @@ export const logos: Record<FrameworkName, string> = {
           %##---                  ===***         
             #-                      =*           
   `,
+  tinijs: `                                                                
+                                                                
+                           üüüüüüüüüü                           
+                         ÏÏüüüüüüüüü666                         
+                       ÏÏÏüüüüüüüüüüü6666                       
+                     ÏÏÏÏÏüüüüüüüüüüü6666üz                     
+                    ÏÏÏÏÏÏÏüüüüüüüüü666üÏzzz                    
+                  ÏÏÏÏÏÏÏÏüüüüüüüüüüüüzzzzzzzÏ                  
+                 ÏÏÏÏÏÏÏÏÏüüüüüüüüÏÏzzzzzzzzzz                  
+                zÏÏÏÏÏÏÏÏÏÏüüüÏÏzzzzzzzzzzzzzzzz                
+                zÏÏÏÏÏÏÏÏÏüÏÏzzzzzzzzzzzzzzzzzzz                
+               zÏÏÏÏÏÏÏÏÏÏzzzzzzzzzzzzzzzzzzzzzzz               
+              zzÏÏÏÏÏÏÏÏÏÏzzzÏzzzÏzzzzzzzzzzzzzzzz              
+              zzÏÏÏÏÏÏÏÏzzÏzzzzÏzzzzÏzzzzzzzzzzzzz              
+             zzzzÏÏÏÏÏÏzzzÏzÏzzzzzÏzzzÏzzzzzzzzíííí             
+            zzzÏÏÏÏÏÏÏzzÏÏzzzÏÏzzzzzzzzzzÏzzzííííííí            
+            zzzzÏÏÏÏÏÏÏzzzÏÏzzzÏÏzzÏzzzÏzzzzíííííííí            
+            zzzzÏÏÏÏÏzzÏÏzzÏÏzzzzzÏzzÏzzzzzzíííííííí            
+            zzzzzÏÏÏÏÏÏzÏÏzzÏÏzÏÏzzzzÏzzÏzzzíííííííí            
+            zzzÏzÏÏzzÏÏÏÏÏÏzzÏzzÏÏzÏzzÏzzzzzzzííííííí           
+            zÏÏÏÏÏÏÏÏÏzÏzÏÏÏzÏÏÏzzÏzÏzÏzzzzzzzzzzíííí           
+            ÏÏÏÏÏÏÏÏÏÏÏÏÏÏzÏÏÏzÏÏzÏzÏzzÏÏzzzzzzzzzzíí           
+            ÏÏÏÏÏÏÏÏÏÏÏzÏÏÏÏzÏÏÏÏzÏzÏÏzzzzzzzzzzzzzzz           
+            ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏzzÏÏÏÏzÏÏÏzzzzzzzzzzzz            
+            ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏzzÏÏzzÏÏzzzzzzzzzzz            
+            ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏzzzzzzzzz            
+             ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏzÏÏÏÏÏÏÏÏzzzzzz             
+              ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏzz              
+               ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏ               
+                ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏ                
+                  ÏÏÏÏÏÏÏÏÏÏÏÏÏÏÏüüüÏüÏÏÏÏÏÏÏÏ                  
+                    ÏÏÏÏÏÏÏÏÏÏüüüüüüüüüüÏÏÏü                    
+                        ÏÏÏüüüüüüüüüüüüü                        
+                                                                
+                                                                `,
   alpine: `
               %%                             =-                      
             %%%%%%                          -----                    
