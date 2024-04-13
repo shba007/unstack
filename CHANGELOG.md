@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.2.4
+
+### Patch Changes
+
+- 9c444a2: feat: fastify added
+
 ## 0.2.3
 
 ### Patch Changes
