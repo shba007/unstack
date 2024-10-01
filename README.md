@@ -1,33 +1,85 @@
-<p align="center">
-  <img src="./assets/logo.png" lt="Logo" width="80" />
-<p>
+# unstack
 
-# Framework Logo
+<!-- automd:badges color=blue -->
 
-> :printer: Print your favorite framework's logo and details into the cli.
+[![npm version](https://img.shields.io/npm/v/unstack?color=blue)](https://npmjs.com/package/unstack)
+[![npm downloads](https://img.shields.io/npm/dm/unstack?color=blue)](https://npmjs.com/package/unstack)
+[![License](https://img.shields.io/npm/l/unstack?color=blue)](https://github.com/shba007/unstack?tab=MIT-1-ov-file)
 
-![Screenshot](assets/screenshot.webp)
+<!-- /automd -->
 
-[![npm Version](https://img.shields.io/npm/v/framework-logo.svg)](https://www.npmjs.com/package/framework-logo) &nbsp;
-[![npm Downloads](https://img.shields.io/npm/dm/framework-logo.svg)](https://www.npmjs.com/package/framework-logo) &nbsp;
-[![License](https://img.shields.io/npm/l/framework-logo.svg)](https://github.com/shba007/framework-logo?tab=MIT-1-ov-file) &nbsp;
+> Print your favorite framework's logo and details into the cli
 
-## Usage
+## Usage (CLI)
+
+Globally run print with `npx`:
 
 ```sh
-npx framework-logo@latest
+npx unstack@latest
 ```
 
-With argument
+or
 
 ```sh
-npx framework-logo@latest -f [framework]
-
+npx unstack@latest -f [framework]
 ```
 
     Options:
     -f, --framework prints the framework's logo and details
-    -h, --help display help for command
+
+Use `npx unstack print --help` for more usage info.
+
+## Usage (API)
+
+Install package:
+
+<!-- automd:pm-install -->
+
+```sh
+# ✨ Auto-detect
+npx nypm install unstack
+
+# npm
+npm install unstack
+
+# yarn
+yarn add unstack
+
+# pnpm
+pnpm install unstack
+
+# bun
+bun install unstack
+```
+
+<!-- /automd -->
+
+Import:
+
+<!-- automd:jsimport cjs cdn name="pkg" -->
+
+**ESM** (Node.js, Bun)
+
+```js
+import {} from 'unstack'
+```
+
+**CommonJS** (Legacy Node.js)
+
+```js
+const {} = require('unstack')
+```
+
+**CDN** (Deno, Bun and Browsers)
+
+```js
+import {} from 'https://esm.sh/unstack'
+```
+
+<!-- /automd -->
+
+WIP Vuepress Logo
+WIP Fresh Description
 
 ## Feature
 
@@ -101,10 +153,47 @@ Currently displays the following details
   - Node.js
   - Deno
   - Bun
-  
+
 - Add all Build Tools/Bundler
   - Webpack
   - Vite
   - Rollup
   - Parcel
   - Snowpack
+
+## Development
+
+<details>
+
+<summary>local development</summary>
+
+- Clone this repository
+- Install latest LTS version of [Node.js](https://nodejs.org/en/)
+- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
+- Install dependencies using `pnpm install`
+- Run interactive tests using `pnpm dev`
+
+</details>
+
+## License
+
+<!-- automd:contributors license=MIT -->
+
+Published under the [MIT](https://github.com/shba007/unstack/blob/main/LICENSE) license.
+Made by [community](https://github.com/shba007/unstack/graphs/contributors) 💛
+<br><br>
+<a href="https://github.com/shba007/unstack/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=shba007/unstack" />
+</a>
+
+<!-- /automd -->
+
+<!-- automd:with-automd -->
+
+---
+
+_🤖 auto updated with [automd](https://automd.unjs.io)_
+
+<!-- /automd -->
+
+

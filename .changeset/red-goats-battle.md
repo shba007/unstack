@@ -1,5 +1,5 @@
 ---
-"framework-logo": patch
+'framework-logo': patch
 ---
 
 feat: tinijs added

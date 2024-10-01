@@ -1,0 +1,38 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_325_31)">
+<mask id="mask0_325_31" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="4" width="146" height="41">
+<path d="M150 4H4V44.001H150V4Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_325_31)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.2166 11.0202C32.0478 2.61683 19.4241 1.61603 11.0208 8.78481C2.61744 15.9536 1.61664 28.5773 8.78542 36.9806C15.9542 45.3839 28.5779 46.3847 36.9812 39.216C45.3846 32.0472 46.3854 19.4235 39.2166 11.0202ZM29.2525 21.5175C30.0233 21.5175 30.5155 22.3527 30.1287 23.0194L30.0175 23.2111L22.4696 35.6294C22.3293 35.8602 22.0788 36.001 21.8088 36.001H21.0883C20.5946 36.001 20.2336 35.5349 20.3573 35.0569L22.4054 27.1384C22.5691 26.5053 22.0912 25.888 21.4373 25.888H18.2914C17.6375 25.888 17.1596 25.2708 17.3232 24.6377L20.4137 12.6829C20.5261 12.2806 20.8904 11.9973 21.3081 12.0021C21.3587 12.0027 21.4046 12.0035 21.4427 12.0047L24.6109 12.0046C25.217 12.0044 25.684 12.539 25.6023 13.1395L25.5828 13.2825L24.3746 20.349C24.2702 20.9598 24.7406 21.5175 25.3603 21.5175H29.2525Z" fill="url(#paint0_radial_325_31)"/>
+<mask id="mask1_325_31" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="40" height="41">
+<path d="M24 44.001C35.0457 44.001 44 35.0467 44 24.001C44 12.9553 35.0457 4.00098 24 4.00098C12.9543 4.00098 4 12.9553 4 24.001C4 35.0467 12.9543 44.001 24 44.001Z" fill="url(#paint1_radial_325_31)"/>
+</mask>
+<g mask="url(#mask1_325_31)">
+<g filter="url(#filter0_f_325_31)">
+<path d="M5.11145 17.4267C4.07032 20.4179 3.75448 23.6136 4.18993 26.7507C4.62537 29.8879 5.79965 32.8768 7.61611 35.4713C9.43256 38.0659 11.8393 40.192 14.6381 41.6746C17.4369 43.1572 20.5478 43.9538 23.7147 43.999C26.8816 44.0442 30.0139 43.3366 32.8539 41.9345C35.6939 40.5324 38.1602 38.4758 40.05 35.9341C41.9397 33.3924 43.1988 30.4383 43.7236 27.3148C44.2483 24.1914 44.0238 20.9879 43.0684 17.9682L37.2532 19.808C37.9172 21.9068 38.0732 24.1333 37.7085 26.3042C37.3438 28.4751 36.4687 30.5283 35.1552 32.2949C33.8418 34.0615 32.1276 35.4908 30.1537 36.4653C28.1799 37.4399 26.0028 37.9316 23.8017 37.9002C21.6006 37.8688 19.4384 37.3151 17.4932 36.2847C15.5479 35.2543 13.8752 33.7766 12.6127 31.9733C11.3502 30.1699 10.534 28.0926 10.2314 25.9122C9.92873 23.7317 10.1483 21.5106 10.8719 19.4316L5.11145 17.4267Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_325_31" x="-6" y="7.4267" width="60" height="46.5743" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_325_31"/>
+</filter>
+<radialGradient id="paint0_radial_325_31" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.00069 24.0004) scale(39.0007 397.71)">
+<stop stop-color="#31B2F3"/>
+<stop offset="0.473958" stop-color="#F27CEC"/>
+<stop offset="1" stop-color="#FD6641"/>
+</radialGradient>
+<radialGradient id="paint1_radial_325_31" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8 24.0011) scale(39 397.703)">
+<stop stop-color="#F27CEC"/>
+<stop offset="0.484375" stop-color="#31B2F3"/>
+<stop offset="1" stop-color="#7D7573"/>
+</radialGradient>
+<clipPath id="clip0_325_31">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
