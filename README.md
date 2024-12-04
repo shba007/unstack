@@ -88,6 +88,7 @@ Currently supports the following
 - Frameworks:-
 
   - Frontend:-
+
     - Angular
     - React
     - Vue
@@ -108,6 +109,7 @@ Currently supports the following
     - Meteor
 
   - Backend:-
+
     - Express
     - Fastify
     - Koa
@@ -150,6 +152,7 @@ Currently displays the following details
   - FastAPI
 
 - Add all Runtime
+
   - Node.js
   - Deno
   - Bun
@@ -195,5 +198,3 @@ Made by [community](https://github.com/shba007/unstack/graphs/contributors) 💛
 _🤖 auto updated with [automd](https://automd.unjs.io)_
 
 <!-- /automd -->
-
-

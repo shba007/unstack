@@ -1,9 +1,7 @@
 import unjs from 'eslint-config-unjs'
 
 export default unjs({
-  ignores: [
-    // ignore paths
-  ],
+  ignores: ['dist', 'node_modules', 'temp'],
   rules: {
     // rule overrides
   },
