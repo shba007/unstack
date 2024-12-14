@@ -73,10 +73,10 @@
     "bin"
   ],
   "volta": {
-    "node": "20.18.1"
+    "node": "22.12.0"
   },
   "engines": {
-    "node": "^20.15.0",
+    "node": "^22.12.0",
     "pnpm": "^9.12.0"
   },
   "packageManager": "pnpm@9.15.0",
