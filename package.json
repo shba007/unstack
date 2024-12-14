@@ -1,6 +1,6 @@
 {
   "name": "unstack",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Print your favorite framework's logo and details into the cli",
   "author": "Shirsendu Bairagi <shirsendu2001@gmail.com>",
   "license": "MIT",
