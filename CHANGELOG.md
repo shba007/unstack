@@ -1,5 +1,36 @@
 # framework-logo
 
+## 0.3.0
+
+### Minor Changes
+
+- 6d4a460: chore: update project settings and dependencies
+
+  - Removes unnecessary files and configurations.
+  - Updates dependencies to their latest versions.
+  - Improves project structure and organization.
+  - Adds support for executable files with bin/unstack.mjs.
+  - Adds a playground for testing and development.
+  - Improves documentation and README.
+  - Updates npm scripts for better maintainability.
+  - Adds renovate config for automatic dependency updates.
+  - Fixes linting issues and improves code style.
+  - Updates editorconfig for consistent code formatting.
+  - Moves logo assets to the public folder.
+  - Simplifies and improves code readability in various files.
+  - Improves the CLI user experience with better prompts and error handling.
+  - Adds support for environment variables for configurable port.
+  - Assets relocated to Public
+
+- d471de8: refactor: logo printing algorithm changed used unascii
+
+### Patch Changes
+
+- fc178f0: feat: tinijs added
+- 2eff86d: chore: migrate from npm to pnpm and changesets
+
+  Migrates the project from npm to pnpm and implements changesets for automated releases. This improves dependency management, reduces install times, and streamlines the release process. Adds support for environment variables for server configuration. Includes updates to CI workflows for integration and deployment with pnpm and changesets. Adds type definitions for environment variables and improves code structure with new files and types. Also includes a sanity test and linting in the CI workflow.
+
 ## 0.2.4
 
 ### Patch Changes
