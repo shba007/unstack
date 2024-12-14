@@ -1,5 +1,5 @@
 ---
-'framework-logo': patch
+'unstack': patch
 ---
 
 feat: tinijs added
