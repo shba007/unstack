@@ -4,8 +4,10 @@ dist
 # Node dependencies
 node_modules
 
-# Temporary Files
-temp
+# Package Managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
 # MISC
 coverage

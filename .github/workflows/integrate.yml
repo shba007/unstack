@@ -7,25 +7,36 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Setup Corepack for pnpm
+        run: corepack enable
+
+      - name: Setup Node.js with Corepack
         uses: actions/setup-node@v4
         with:
-          node-version: '20.x'
-          cache: 'npm'
+          node-version: '20'
+          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Bulid Artifacts
-        run: npm run build
+        run: pnpm build
 
       # - name: Run Tests
-      #   run: npm test
+      #   run: pnpm test
+
+      - name: Lint Code
+        run: pnpm lint || echo "Linting failed, but continuing"
+
+      # - name: Format Code
+      #   run: pnpm format
 
       - name: Create Release Pull Request
         uses: changesets/action@v1

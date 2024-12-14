@@ -4,7 +4,8 @@ import consola from 'consola'
 import chalk from 'chalk'
 
 import { name, description, version } from '../package.json'
-import { FrameworkName, getDetails, getColor, getImage } from './print'
+import { getDetails, getColor, getImage } from '.'
+import { FrameworkName } from './types'
 
 export const main = defineCommand({
   meta: {
