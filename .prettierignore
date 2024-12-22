@@ -4,15 +4,20 @@ dist
 # Node dependencies
 node_modules
 
-# Package Managers
-package-lock.json
+# Package Manager
+package.json
 pnpm-lock.yaml
-yarn.lock
 
-# MISC
-coverage
-.vscode
+# Logs
+logs
+*.log
+
+# Misc
 .DS_Store
-.eslintcache
-*.log*
-*.env*
+.fleet
+.idea
+coverage
+
+# Env files
+.env*
+!.env.example

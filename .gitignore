@@ -4,13 +4,16 @@ dist
 # Node dependencies
 node_modules
 
-# Temporary Files
-temp
+# Logs
+logs
+*.log
 
-# MISC
-coverage
-.vscode
+# Misc
 .DS_Store
-.eslintcache
-*.log*
-*.env*
+.fleet
+.idea
+coverage
+
+# Env files
+.env*
+!.env.example

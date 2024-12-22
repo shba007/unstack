@@ -1,13 +1,8 @@
 import unjs from 'eslint-config-unjs'
 
 export default unjs({
-  ignores: ['dist', 'node_modules', 'temp'],
+  ignores: ['dist', 'node_modules'],
   rules: {
-    // rule overrides
-  },
-  markdown: {
-    rules: {
-      // markdown rule overrides
-    },
+    'unicorn/no-anonymous-default-export': 0,
   },
 })

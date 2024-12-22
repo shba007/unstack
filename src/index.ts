@@ -1,6 +1,6 @@
 import { $fetch } from 'ofetch'
 import { format, formatDistance, parseISO } from 'date-fns'
-import { asciiPrint } from 'unascii'
+import { asciiPrint } from '@shba007/unascii'
 import ora from 'ora'
 import { FrameworkName } from './types'
 import frameworks from './frameworks.json'
@@ -17,8 +17,8 @@ export async function getImage(framework: FrameworkName) {
 function getVersion(version: string | undefined, updatedAt: any): string | undefined {
   return version
     ? `${version} (${formatDistance(parseISO(updatedAt[version]), new Date(), {
-      addSuffix: true,
-    })})`
+        addSuffix: true,
+      })})`
     : undefined
 }
 
@@ -43,7 +43,7 @@ export async function getDetails(framework: FrameworkName) {
     })})`,
     version: {
       stable: getVersion(versions.latest, updatedAt),
-      experimental: new Date(updatedAt[versions.next]).getTime() > new Date(updatedAt[versions.latest]).getTime() ? getVersion(versions.next, updatedAt) : undefined,
+      next: new Date(updatedAt[versions.next]).getTime() > new Date(updatedAt[versions.latest]).getTime() ? getVersion(versions.next, updatedAt) : undefined,
     },
     author: author,
     website: website,

@@ -2,9 +2,9 @@
 
 <!-- automd:badges color=blue -->
 
-[![npm version](https://img.shields.io/npm/v/unstack?color=blue)](https://npmjs.com/package/unstack)
-[![npm downloads](https://img.shields.io/npm/dm/unstack?color=blue)](https://npmjs.com/package/unstack)
-[![License](https://img.shields.io/npm/l/unstack?color=blue)](https://github.com/shba007/unstack?tab=MIT-1-ov-file)
+[![npm version](https://img.shields.io/npm/v/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
+[![npm downloads](https://img.shields.io/npm/dm/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
+[![License](https://img.shields.io/npm/l/@shba007/unstack?color=blue)](https://github.com/shba007/unstack?tab=MIT-1-ov-file)
 
 <!-- /automd -->
 
