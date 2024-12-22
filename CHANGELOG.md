@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.1
+
+### Patch Changes
+
+- cb71f12: chore: add husky and commitlint for commit linting and pre-commit hooks
+
 ## 0.3.0
 
 ### Minor Changes
