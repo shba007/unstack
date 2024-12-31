@@ -73,22 +73,21 @@
     "bin"
   ],
   "volta": {
-    "node": "20.18.1"
+    "node": "22.12.0"
   },
   "engines": {
-    "node": "^20.15.0",
+    "node": "^20.15.0 || ^22.11.0",
     "pnpm": "^9.12.0"
   },
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.2",
   "scripts": {
     "prepare": "husky",
     "dev": "vitest dev",
     "detect": "gitleaks git --verbose",
     "lint": "eslint . --fix",
     "format": "prettier . --write",
-    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "test:types": "tsc --noEmit --skipLibCheck",
-    "commit": "oco",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "play": "dotenvx run -- jiti playground",
     "build": "unbuild",
     "prepack": "pnpm build",
@@ -98,10 +97,10 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
-    "@shba007/unascii": "^0.3.2",
+    "@shba007/unascii": "^0.3.3",
     "chalk": "^5.4.1",
     "citty": "^0.1.6",
-    "consola": "^3.3.0",
+    "consola": "^3.3.3",
     "date-fns": "^4.1.0",
     "ofetch": "^1.4.1",
     "ora": "^8.1.1"
@@ -110,7 +109,7 @@
     "@changesets/cli": "^2.27.11",
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@dotenvx/dotenvx": "^1.31.3",
+    "@dotenvx/dotenvx": "^1.32.0",
     "@types/node": "^22.10.2",
     "@vitest/coverage-v8": "^2.1.8",
     "changelogen": "^0.5.7",
@@ -118,10 +117,9 @@
     "eslint-config-unjs": "^0.4.2",
     "husky": "^9.1.7",
     "jiti": "^2.4.2",
-    "opencommit": "^3.2.5",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
-    "unbuild": "3.0.1",
+    "unbuild": "3.2.0",
     "vitest": "^2.1.8"
   }
 }

@@ -16,6 +16,8 @@ logs
 .DS_Store
 .fleet
 .idea
+
+# Test
 coverage
 
 # Env files
