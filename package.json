@@ -81,7 +81,7 @@
   },
   "packageManager": "pnpm@9.15.2",
   "scripts": {
-    "prepare": "husky",
+    "prepare": "husky || true",
     "dev": "vitest dev",
     "detect": "gitleaks git --verbose",
     "lint": "eslint . --fix",
@@ -97,7 +97,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
-    "@shba007/unascii": "^0.3.3",
+    "@shba007/unascii": "^0.3.4",
     "chalk": "^5.4.1",
     "citty": "^0.1.6",
     "consola": "^3.3.3",
@@ -110,7 +110,7 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@dotenvx/dotenvx": "^1.32.0",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.3",
     "@vitest/coverage-v8": "^2.1.8",
     "changelogen": "^0.5.7",
     "eslint": "^9.17.0",
