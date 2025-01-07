@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.2
+
+### Patch Changes
+
+- 22e851f: fix: update unstack command paths and bump @types/node version
+
 ## 0.3.1
 
 ### Patch Changes
