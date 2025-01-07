@@ -66,7 +66,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "unstack": "dist/index.mjs"
+    "unstack": "./bin/unstack.mjs"
   },
   "files": [
     "dist",
@@ -93,7 +93,7 @@
     "prepack": "pnpm build",
     "release": "pnpm test && changelogen --release && pnpm publish && git push --follow-tags",
     "clean": "rm -rf coverage dist",
-    "unstack": "jiti playground"
+    "unstack": "node bin/unstack.mjs"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
@@ -110,7 +110,7 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@dotenvx/dotenvx": "^1.32.0",
-    "@types/node": "^22.10.3",
+    "@types/node": "^22.10.5",
     "@vitest/coverage-v8": "^2.1.8",
     "changelogen": "^0.5.7",
     "eslint": "^9.17.0",
