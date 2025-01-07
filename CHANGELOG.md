@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.3
+
+### Patch Changes
+
+- 107cffa: fix: add 'public' directory to package.json files list
+
 ## 0.3.2
 
 ### Patch Changes
