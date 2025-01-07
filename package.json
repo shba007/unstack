@@ -94,7 +94,7 @@
     "prepack": "pnpm build",
     "release": "pnpm test && changelogen --release && pnpm publish && git push --follow-tags",
     "clean": "rm -rf coverage dist",
-    "unstack": "node bin/unstack.mjs"
+    "unstack": "cd bin && node unstack.mjs"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
