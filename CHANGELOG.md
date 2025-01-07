@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.4
+
+### Patch Changes
+
+- f294363: chore: update packageManager version to pnpm@9.15.3
+
 ## 0.3.3
 
 ### Patch Changes
