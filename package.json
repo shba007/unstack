@@ -70,7 +70,8 @@
   },
   "files": [
     "dist",
-    "bin"
+    "bin",
+    "public"
   ],
   "volta": {
     "node": "22.12.0"
