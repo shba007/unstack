@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.5
+
+### Patch Changes
+
+- 5884bd7: fix: update unstack command path and adjust image path in getImage function
+
 ## 0.3.4
 
 ### Patch Changes
