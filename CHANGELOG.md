@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.6
+
+### Patch Changes
+
+- 75f73ef: fix: update image path to use the correct repository URL and adjust package references
+
 ## 0.3.5
 
 ### Patch Changes
