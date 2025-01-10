@@ -70,11 +70,10 @@
   },
   "files": [
     "dist",
-    "bin",
-    "public"
+    "bin"
   ],
   "volta": {
-    "node": "22.12.0"
+    "node": "22.13.0"
   },
   "engines": {
     "node": "^20.15.0 || ^22.11.0",
@@ -98,7 +97,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.2.1",
-    "@shba007/unascii": "^0.3.4",
+    "@shba007/unascii": "^0.3.5",
     "chalk": "^5.4.1",
     "citty": "^0.1.6",
     "consola": "^3.3.3",
@@ -110,7 +109,7 @@
     "@changesets/cli": "^2.27.11",
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@dotenvx/dotenvx": "^1.32.0",
+    "@dotenvx/dotenvx": "^1.32.1",
     "@types/node": "^22.10.5",
     "@vitest/coverage-v8": "^2.1.8",
     "changelogen": "^0.5.7",
@@ -119,7 +118,7 @@
     "husky": "^9.1.7",
     "jiti": "^2.4.2",
     "prettier": "^3.4.2",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "unbuild": "3.2.0",
     "vitest": "^2.1.8"
   }

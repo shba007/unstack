@@ -10,7 +10,7 @@ export function getColor(framework: FrameworkName) {
 }
 
 export async function getImage(framework: FrameworkName) {
-  const print = await asciiPrint(`../public/logos/${framework}.svg`, { width: 32, widthSkew: 2, output: 'console' })
+  const print = await asciiPrint(`https://raw.githubusercontent.com/shba007/unstack/refs/heads/main/public/logos/${framework}.svg`, { width: 32, widthSkew: 2, output: 'console' })
   return print.getImage()
 }
 

@@ -15,19 +15,19 @@
 Globally run print with `npx`:
 
 ```sh
-npx unstack@latest
+npx @shba007/unstack@latest
 ```
 
 or
 
 ```sh
-npx unstack@latest -f [framework]
+npx @shba007/unstack@latest -f [framework]
 ```
 
     Options:
     -f, --framework prints the framework's logo and details
 
-Use `npx unstack print --help` for more usage info.
+Use `npx @shba007/unstack print --help` for more usage info.
 
 ## Usage (API)
 
@@ -37,19 +37,19 @@ Install package:
 
 ```sh
 # ✨ Auto-detect
-npx nypm install unstack
+npx nypm install @shba007/unstack
 
 # npm
-npm install unstack
+npm install @shba007/unstack
 
 # yarn
-yarn add unstack
+yarn add @shba007/unstack
 
 # pnpm
-pnpm install unstack
+pnpm install @shba007/unstack
 
 # bun
-bun install unstack
+bun install @shba007/unstack
 ```
 
 <!-- /automd -->
@@ -61,19 +61,19 @@ Import:
 **ESM** (Node.js, Bun)
 
 ```js
-import {} from 'unstack'
+import {} from '@shba007/unstack'
 ```
 
 **CommonJS** (Legacy Node.js)
 
 ```js
-const {} = require('unstack')
+const {} = require('@shba007/unstack')
 ```
 
 **CDN** (Deno, Bun and Browsers)
 
 ```js
-import {} from 'https://esm.sh/unstack'
+import {} from 'https://esm.sh/@shba007/unstack'
 ```
 
 <!-- /automd -->
