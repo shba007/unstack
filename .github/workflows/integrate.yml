@@ -24,7 +24,9 @@ jobs:
           cache: 'pnpm'
 
       - name: Install Dependencies
-        run: pnpm install
+        run: |
+          sudo apt-get install -y libpixman-1-dev
+          pnpm install
 
       - name: Bulid Artifacts
         run: pnpm build
