@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shba007/unstack.git"
+    "url": "https://github.com/shba007/unstack.git"
   },
   "keywords": [
     "art",
@@ -73,13 +73,13 @@
     "bin"
   ],
   "volta": {
-    "node": "22.13.0"
+    "node": "22.14.0"
   },
   "engines": {
     "node": "^20.15.0 || ^22.11.0",
-    "pnpm": "^9.12.0"
+    "pnpm": "^9.15.0 || ^10.2.0"
   },
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@10.6.1",
   "scripts": {
     "prepare": "husky || true",
     "dev": "vitest dev",
@@ -96,30 +96,37 @@
     "unstack": "cd bin && node unstack.mjs"
   },
   "dependencies": {
-    "@inquirer/prompts": "^7.2.1",
-    "@shba007/unascii": "^0.3.5",
+    "@inquirer/prompts": "^7.3.3",
+    "@shba007/unascii": "^0.4.0",
     "chalk": "^5.4.1",
     "citty": "^0.1.6",
-    "consola": "^3.3.3",
+    "consola": "^3.4.0",
     "date-fns": "^4.1.0",
     "ofetch": "^1.4.1",
-    "ora": "^8.1.1"
+    "ora": "^8.2.0",
+    "std-env": "^3.8.1"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.11",
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
-    "@dotenvx/dotenvx": "^1.32.1",
-    "@types/node": "^22.10.5",
-    "@vitest/coverage-v8": "^2.1.8",
-    "changelogen": "^0.5.7",
-    "eslint": "^9.17.0",
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@dotenvx/dotenvx": "^1.38.4",
+    "@types/node": "^22.13.10",
+    "@vitest/coverage-v8": "^3.0.8",
+    "changelogen": "^0.6.1",
+    "eslint": "^9.22.0",
     "eslint-config-unjs": "^0.4.2",
     "husky": "^9.1.7",
     "jiti": "^2.4.2",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.3",
-    "unbuild": "3.2.0",
-    "vitest": "^2.1.8"
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "unbuild": "3.5.0",
+    "vitest": "^3.0.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "canvas",
+      "esbuild"
+    ]
   }
 }
