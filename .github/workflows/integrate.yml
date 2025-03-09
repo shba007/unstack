@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          sudo apt-get install -y libpixman-1-dev libcairo2-dev
+          sudo apt-get install -y libpixman-1-dev libcairo2-dev libpango1.0-dev
           pnpm install
 
       - name: Bulid Artifacts
