@@ -46,8 +46,8 @@ importers:
         specifier: ^19.8.0
         version: 19.8.0
       '@dotenvx/dotenvx':
-        specifier: ^1.38.4
-        version: 1.38.4
+        specifier: ^1.38.5
+        version: 1.38.5
       '@types/node':
         specifier: ^22.13.10
         version: 22.13.10
@@ -241,8 +241,8 @@ packages:
     resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
 
-  '@dotenvx/dotenvx@1.38.4':
-    resolution: {integrity: sha512-5rl1W5uMgSMrjluMqOf0FmUC6DILlR9Iy+6WzJIzt8qAON6gSbNZEkDG7MtktbK8g6QgQm9mMwaGgjW4DeU9Gw==}
+  '@dotenvx/dotenvx@1.38.5':
+    resolution: {integrity: sha512-NAmo2Esp7vfOvagkTK2lBU9ptWCojPzFvI2slLtoGNH1hebMX9JWBHkByUGPYgAOnPZN5F4uGxVBGWQNyXse4Q==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -3647,7 +3647,7 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.1
       chalk: 5.4.1
 
-  '@dotenvx/dotenvx@1.38.4':
+  '@dotenvx/dotenvx@1.38.5':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7

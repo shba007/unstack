@@ -79,7 +79,7 @@
     "node": "^20.15.0 || ^22.11.0",
     "pnpm": "^9.15.0 || ^10.2.0"
   },
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.6.3",
   "scripts": {
     "prepare": "husky || true",
     "dev": "vitest dev",
@@ -110,7 +110,7 @@
     "@changesets/cli": "^2.28.1",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@dotenvx/dotenvx": "^1.38.4",
+    "@dotenvx/dotenvx": "^1.38.5",
     "@types/node": "^22.13.10",
     "@vitest/coverage-v8": "^3.0.8",
     "changelogen": "^0.6.1",
