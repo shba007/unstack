@@ -1,5 +1,11 @@
 # framework-logo
 
+## 0.3.7
+
+### Patch Changes
+
+- 7d7ae71: fix: update workflows to use pnpm and adjust package dependencies
+
 ## 0.3.6
 
 ### Patch Changes
