@@ -1,5 +1,27 @@
 # framework-logo
 
+## v0.3.7
+
+[compare changes](https://github.com/shba007/unstack/compare/v0.3.6...v0.3.7)
+
+### 🩹 Fixes
+
+- Update workflows to use pnpm and adjust package dependencies ([7d7ae71](https://github.com/shba007/unstack/commit/7d7ae71))
+- Install libpixman-1-dev before pnpm install in workflow ([b9c0f86](https://github.com/shba007/unstack/commit/b9c0f86))
+- Add libcairo2-dev installation to workflow dependencies ([1040417](https://github.com/shba007/unstack/commit/1040417))
+- Add libpango1.0-dev installation to workflow dependencies ([fda0ecd](https://github.com/shba007/unstack/commit/fda0ecd))
+- Install additional dependencies before pnpm install in workflow ([d7c9ebb](https://github.com/shba007/unstack/commit/d7c9ebb))
+- Update pnpm and @dotenvx/dotenvx versions in package.json and pnpm-lock.yaml ([ba1c092](https://github.com/shba007/unstack/commit/ba1c092))
+
+### 💅 Refactors
+
+- From node to bun and changeset to changelogen and ci/cd pipeline ([d1bc7d7](https://github.com/shba007/unstack/commit/d1bc7d7))
+
+### ❤️ Contributors
+
+- Shba007 ([@shba007](https://github.com/shba007))
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## 0.3.6
 
 ### Patch Changes
