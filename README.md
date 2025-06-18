@@ -1,12 +1,8 @@
 # unstack
 
-<!-- automd:badges color=blue -->
-
 [![npm version](https://img.shields.io/npm/v/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
 [![npm downloads](https://img.shields.io/npm/dm/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
 [![License](https://img.shields.io/npm/l/@shba007/unstack?color=blue)](https://github.com/shba007/unstack?tab=MIT-1-ov-file)
-
-<!-- /automd -->
 
 > Print your favorite framework's logo and details into the cli
 
@@ -33,8 +29,6 @@ Use `npx @shba007/unstack print --help` for more usage info.
 
 Install package:
 
-<!-- automd:pm-install -->
-
 ```sh
 # ✨ Auto-detect
 npx nypm install @shba007/unstack
@@ -52,11 +46,7 @@ pnpm install @shba007/unstack
 bun install @shba007/unstack
 ```
 
-<!-- /automd -->
-
 Import:
-
-<!-- automd:jsimport cjs cdn name="pkg" -->
 
 **ESM** (Node.js, Bun)
 
@@ -75,11 +65,6 @@ const {} = require('@shba007/unstack')
 ```js
 import {} from 'https://esm.sh/@shba007/unstack'
 ```
-
-<!-- /automd -->
-
-WIP Vuepress Logo
-WIP Fresh Description
 
 ## Feature
 
@@ -180,21 +165,8 @@ Currently displays the following details
 
 ## License
 
-<!-- automd:contributors license=MIT -->
-
 Published under the [MIT](https://github.com/shba007/unstack/blob/main/LICENSE) license.
-Made by [community](https://github.com/shba007/unstack/graphs/contributors) 💛
 <br><br>
 <a href="https://github.com/shba007/unstack/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=shba007/unstack" />
 </a>
-
-<!-- /automd -->
-
-<!-- automd:with-automd -->
-
----
-
-_🤖 auto updated with [automd](https://automd.unjs.io)_
-
-<!-- /automd -->

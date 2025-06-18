@@ -6,7 +6,7 @@ node_modules
 
 # Package Manager
 package.json
-pnpm-lock.yaml
+bun.lock
 
 # Logs
 logs

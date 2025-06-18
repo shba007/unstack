@@ -1,45 +1,58 @@
 name: NPM CD
 run-name: ${{ github.ref_name }}
 
+permissions:
+  contents: write
+  packages: write
+  attestations: write
+  id-token: write
+  pages: write
+
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  release:
+    types:
+      - published
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref_name }}
   cancel-in-progress: true
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        registry:
+          - url: https://npm.pkg.github.com
+            token: 'GITHUB_TOKEN'
+            scope: '@${{ github.repository_owner }}'
+          - url: https://registry.npmjs.org
+            token: 'NPM_TOKEN'
+            scope: '@${{ github.repository_owner }}'
+
     steps:
-      - name: Checkout Repo
+      - name: 📥 Checkout Repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup pnpm
-        run: npm i -g pnpm
-
-      - name: Setup Node.js with pnpm
-        uses: actions/setup-node@v4
+      - name: 🛠️ Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: lts/*
-          cache: 'pnpm'
+          bun-version: latest
+          registry-url: ${{ matrix.registry.url }}
+          scope: ${{ matrix.registry.scope }}
 
-      - name: Install Dependencies
-        run: |
-          sudo apt-get install -y libpixman-1-dev libcairo2-dev libpango1.0-dev
-          pnpm install
+      - name: 📦 Install Dependencies
+        run: bun install --frozen-lockfile
 
-      - name: Bulid Artifacts
-        run: pnpm build
-
-      - name: Publish Package
+      - name: ⚙️ Publish Package
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets[matrix.registry.token] }}
+          REGISTRY_URL: ${{ matrix.registry.url }}
         run: |
-          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
-          echo "registry=https://registry.npmjs.org/" >> ~/.npmrc
-          pnpm publish --no-git-checks --access public
+          CLEAN_URL="${REGISTRY_URL#https://}"
+          echo "//${CLEAN_URL}/:_authToken=${NODE_AUTH_TOKEN}" > ./.npmrc
+          echo "registry=${REGISTRY_URL}" >> ./.npmrc
+          bun publish --no-git-checks --access public
+          rm ./.npmrc

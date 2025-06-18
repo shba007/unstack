@@ -1,0 +1,30 @@
+name: NPM Release
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    if: contains(github.event.head_commit.message, 'ci(release):')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🛠️ Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 📝 Create Release Note
+        run: bunx changelogen@latest gh release
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_PAT}}
