@@ -80,12 +80,12 @@
   "packageManager": "bun@1.2.16",
   "scripts": {
     "prepare": "husky || true",
-    "dev": "vitest dev",
+    "dev": "dotenvx run -- vitest dev",
     "detect": "gitleaks git --verbose",
     "lint": "eslint . --fix",
     "format": "prettier . --write",
     "test:types": "tsc --noEmit --skipLibCheck",
-    "test": "bun lint && bun test:types && vitest run --coverage",
+    "test": "bun lint && bun test:types && dotenvx run -- vitest run --coverage",
     "play": "dotenvx run -- jiti examples",
     "build": "unbuild",
     "prepack": "bun run build",
@@ -101,7 +101,9 @@
     "date-fns": "^4.1.0",
     "ofetch": "^1.4.1",
     "ora": "^8.2.0",
-    "std-env": "^3.9.0"
+    "std-env": "^3.9.0",
+    "string-width": "^7.2.0",
+    "wrap-ansi": "^9.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -109,7 +111,6 @@
     "@dotenvx/dotenvx": "^1.44.2",
     "@types/node": "^24.0.3",
     "@vitest/coverage-v8": "^3.2.4",
-    "changelogen": "^0.6.1",
     "eslint": "^9.29.0",
     "eslint-config-unjs": "^0.4.2",
     "husky": "^9.1.7",

@@ -1,4 +1,12 @@
-# unstack
+<p align="center">
+  <picture>
+    <source srcset="./public/logo-dark.png" media="(prefers-color-scheme: dark)">
+    <source srcset="./public/logo-light.png" media="(prefers-color-scheme: light)">
+    <img src="./public/logo-light.png" alt="Logo" width="128">
+  </picture>
+</p>
+
+# UnStack
 
 [![npm version](https://img.shields.io/npm/v/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
 [![npm downloads](https://img.shields.io/npm/dm/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
@@ -71,9 +79,7 @@ import {} from 'https://esm.sh/@shba007/unstack'
 Currently supports the following
 
 - Frameworks:-
-
   - Frontend:-
-
     - Angular
     - React
     - Vue
@@ -94,7 +100,6 @@ Currently supports the following
     - Meteor
 
   - Backend:-
-
     - Express
     - Fastify
     - Koa
@@ -130,14 +135,12 @@ Currently displays the following details
 
 - Update Published At Using NPM
 - Include all framework's Icons of JS Ecosystem
-
   - Adonis JS
   - Django
   - Flask
   - FastAPI
 
 - Add all Runtime
-
   - Node.js
   - Deno
   - Bun

@@ -1,4 +1,4 @@
-# framework-logo
+# unstack
 
 ## v0.3.7
 
@@ -63,7 +63,6 @@
 ### Minor Changes
 
 - 6d4a460: chore: update project settings and dependencies
-
   - Removes unnecessary files and configurations.
   - Updates dependencies to their latest versions.
   - Improves project structure and organization.

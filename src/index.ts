@@ -10,7 +10,7 @@ export function getColor(framework: FrameworkName) {
 }
 
 export async function getImage(framework: FrameworkName) {
-  const print = await asciiPrint(`https://raw.githubusercontent.com/shba007/unstack/refs/heads/main/public/logos/${framework}.svg`, { width: 32, widthSkew: 2, output: 'console' })
+  const print = await asciiPrint(`https://raw.githubusercontent.com/shba007/unstack/refs/heads/main/public/logos/${framework}.svg`, { width: 24, widthSkew: 2, output: 'console' })
   return print.getImage()
 }
 
@@ -25,7 +25,7 @@ function getVersion(version: string | undefined, updatedAt: any): string | undef
 export async function getDetails(framework: FrameworkName) {
   const spinner = ora('Loading Details').start()
 
-  const { repo, pkg, publishedAt, author, website, initCommend } = frameworks[framework]
+  const { name, repo, pkg, publishedAt, author, website, initCommend } = frameworks[framework]
 
   const [{ repo: details }, release] = await Promise.all([$fetch(`/repos/${repo}`, { baseURL: 'https://ungh.cc' }), $fetch(`/${pkg}`, { baseURL: 'https://registry.npmjs.org' })])
 
@@ -35,8 +35,8 @@ export async function getDetails(framework: FrameworkName) {
   const versions = release['dist-tags']
 
   return {
-    description: repoDescription,
-    releaseDescription,
+    name: name,
+    description: repoDescription ?? releaseDescription,
     stars,
     publishedAt: `${format(parseISO(publishedAt), 'dd MMM, yyyy')} (${formatDistance(parseISO(publishedAt), new Date(), {
       addSuffix: true,
