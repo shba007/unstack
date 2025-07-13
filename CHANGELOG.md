@@ -1,6 +1,6 @@
 # unstack
 
-## v1.0.1
+## v1.0.0
 
 [compare changes](https://github.com/shba007/unstack/compare/v0.3.7...v1.0.1)
 
