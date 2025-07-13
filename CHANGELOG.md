@@ -1,5 +1,18 @@
 # unstack
 
+## v1.0.0
+
+[compare changes](https://github.com/shba007/unstack/compare/v0.3.7...v1.0.1)
+
+### 🏡 Chore
+
+- Bump version to 1.0.0 for release ([c314df2](https://github.com/shba007/unstack/commit/c314df2))
+- Version bump to 1.0.0 first major release ([9db9fce](https://github.com/shba007/unstack/commit/9db9fce))
+
+### ❤️ Contributors
+
+- Shba007 ([@shba007](https://github.com/shba007))
+
 ## v0.3.7
 
 [compare changes](https://github.com/shba007/unstack/compare/v0.3.6...v0.3.7)
