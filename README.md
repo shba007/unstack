@@ -12,7 +12,9 @@
 [![npm downloads](https://img.shields.io/npm/dm/@shba007/unstack?color=blue)](https://npmjs.com/package/@shba007/unstack)
 [![License](https://img.shields.io/npm/l/@shba007/unstack?color=blue)](https://github.com/shba007/unstack?tab=MIT-1-ov-file)
 
-> Print your favorite framework's logo and details into the cli
+> Print your favorite framework info into cli
+
+<video controls src="public/preview.mp4" title="Demo" loop muted autoplay></video>
 
 ## Usage (CLI)
 
