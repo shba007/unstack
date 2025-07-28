@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shba007/unstack.git"
+    "url": "git+https://github.com/shba007/unstack.git"
   },
   "keywords": [
     "art",
@@ -77,7 +77,7 @@
     "pnpm": "^9.15.0 || ^10.2.0",
     "bun": "^1.2.9"
   },
-  "packageManager": "bun@1.2.18",
+  "packageManager": "bun@1.2.19",
   "scripts": {
     "prepare": "husky || true",
     "dev": "dotenvx run -- vitest dev",
@@ -93,8 +93,8 @@
     "unstack": "bun bin/unstack.mjs"
   },
   "dependencies": {
-    "@inquirer/prompts": "^7.6.0",
-    "@shba007/unascii": "^1.0.0",
+    "@inquirer/prompts": "^7.7.1",
+    "@shba007/unascii": "^1.0.1",
     "chalk": "^5.4.1",
     "citty": "^0.1.6",
     "consola": "^3.4.2",
@@ -108,13 +108,13 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@dotenvx/dotenvx": "^1.48.0",
-    "@types/node": "^24.0.14",
+    "@dotenvx/dotenvx": "^1.48.3",
+    "@types/node": "^24.1.0",
     "@vitest/coverage-v8": "^3.2.4",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "eslint-config-unjs": "^0.5.0",
     "husky": "^9.1.7",
-    "jiti": "^2.4.2",
+    "jiti": "^2.5.1",
     "prettier": "^3.6.2",
     "typescript": "^5.8.3",
     "unbuild": "3.5.0",
