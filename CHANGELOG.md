@@ -1,5 +1,22 @@
 # unstack
 
+## v1.0.1
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.0...v1.0.1)
+
+### 📖 Documentation
+
+- Added demo video ([577c989](https://github.com/shba007/unstack/commit/577c989))
+
+### 🏡 Chore
+
+- Update package.json dependencies and package manager version ([7d52362](https://github.com/shba007/unstack/commit/7d52362))
+- Update package dependencies and package manager version ([2c4339a](https://github.com/shba007/unstack/commit/2c4339a))
+
+### ❤️ Contributors
+
+- Shba007 ([@shba007](https://github.com/shba007))
+
 ## v1.0.0
 
 [compare changes](https://github.com/shba007/unstack/compare/v0.3.7...v1.0.1)
