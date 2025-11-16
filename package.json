@@ -100,7 +100,7 @@
     "consola": "^3.4.2",
     "date-fns": "^4.1.0",
     "ofetch": "^1.4.1",
-    "ora": "^8.2.0",
+    "ora": "^9.0.0",
     "std-env": "^3.9.0",
     "string-width": "^8.1.0",
     "wrap-ansi": "^9.0.0"
