@@ -106,8 +106,8 @@
     "wrap-ansi": "^9.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
     "@dotenvx/dotenvx": "^1.49.0",
     "@types/node": "^24.3.1",
     "@vitest/coverage-v8": "^3.2.4",
