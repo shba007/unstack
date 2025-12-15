@@ -35,7 +35,7 @@ jobs:
 
     steps:
       - name: 📥 Checkout Repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -59,3 +59,55 @@ jobs:
           echo "registry=${REGISTRY_URL}" >> ./.npmrc
           bun publish --no-git-checks --access public
           rm ./.npmrc
+
+  build-cli:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: 'macos-latest' # for Arm based macs (M1 and above).
+            name: macos-arm64
+            args: '--target aarch64-apple-darwin'
+            ext: ''
+
+          - platform: 'macos-latest' # for Intel based macs.
+            name: macos-x64
+            args: '--target x86_64-apple-darwin'
+            ext: ''
+
+          - platform: 'ubuntu-latest'
+            name: linux-x64
+            args: ''
+            ext: ''
+
+          - platform: 'windows-latest'
+            name: windows-x64
+            args: ''
+            ext: '.exe'
+
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - name: 📥 Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🛠️ Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 📦 Install Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: ⚙️ Build Artifact
+        run: bun run bun:build
+
+      - name: ⚙️ Upload Artifact
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: dist/bin/cli${{ matrix.ext }}
+          asset_name: unstack_${{ env.VERSION }}_${{ matrix.name }}${{ matrix.ext }}
+          tag: ${{ env.VERSION }}
