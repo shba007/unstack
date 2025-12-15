@@ -1,5 +1,17 @@
 # unstack
 
+## v1.0.2
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.1...v1.0.2)
+
+### 🏡 Chore
+
+- Update bun configuration and dependencies ([bc56ac6](https://github.com/shba007/unstack/commit/bc56ac6))
+
+### ❤️ Contributors
+
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.1
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.0...v1.0.1)
