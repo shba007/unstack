@@ -1,6 +1,6 @@
 {
   "name": "@shba007/unstack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Print your favorite framework info into cli",
   "author": "Shirsendu Bairagi <shirsendu2001@gmail.com>",
   "license": "MIT",
