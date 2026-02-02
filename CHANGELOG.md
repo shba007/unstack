@@ -1,5 +1,17 @@
 # unstack
 
+## v1.0.4
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.3...v1.0.4)
+
+### 🏡 Chore
+
+- Update package dependencies and package manager version ([89046ff](https://github.com/shba007/unstack/commit/89046ff))
+
+### ❤️ Contributors
+
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.3
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.2...v1.0.3)
