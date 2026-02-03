@@ -1,5 +1,17 @@
 # unstack
 
+## v1.0.6
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.5...v1.0.6)
+
+### 🩹 Fixes
+
+- Remove registry url before install ([6771e9f](https://github.com/shba007/unstack/commit/6771e9f))
+
+### ❤️ Contributors
+
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.5
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.4...v1.0.5)
