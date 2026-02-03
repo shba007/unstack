@@ -1,5 +1,17 @@
 # unstack
 
+## v1.0.5
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.4...v1.0.5)
+
+### 🏡 Chore
+
+- Bun.lock updated ([3491396](https://github.com/shba007/unstack/commit/3491396))
+
+### ❤️ Contributors
+
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.4
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.3...v1.0.4)
