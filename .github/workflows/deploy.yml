@@ -43,8 +43,6 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-          registry-url: ${{ matrix.registry.url }}
-          scope: ${{ matrix.registry.scope }}
 
       - name: 📦 Install Dependencies
         run: bun install --frozen-lockfile
