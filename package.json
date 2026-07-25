@@ -104,7 +104,7 @@
     "ora": "^9.1.0",
     "std-env": "^3.10.0",
     "string-width": "^8.1.1",
-    "wrap-ansi": "^9.0.2"
+    "wrap-ansi": "^10.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.0",
