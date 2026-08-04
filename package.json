@@ -109,7 +109,7 @@
   "devDependencies": {
     "@commitlint/cli": "^20.4.0",
     "@commitlint/config-conventional": "^20.4.0",
-    "@dotenvx/dotenvx": "^1.52.0",
+    "@dotenvx/dotenvx": "^2.19.1",
     "@types/node": "^25.2.0",
     "@vitest/coverage-v8": "^4.0.18",
     "eslint": "^9.39.2",
