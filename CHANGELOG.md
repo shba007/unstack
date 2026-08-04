@@ -1,5 +1,19 @@
 # unstack
 
+## v1.0.7
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.6...v1.0.7)
+
+### 🏡 Chore
+
+- Update package dependencies and package manager version ([fb14fcb](https://github.com/shba007/unstack/commit/fb14fcb))
+- Update dependencies and package manager version ([a651081](https://github.com/shba007/unstack/commit/a651081))
+- Update dependencies and devDependencies to latest versions ([962f822](https://github.com/shba007/unstack/commit/962f822))
+
+### ❤️ Contributors
+
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.6
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.5...v1.0.6)
