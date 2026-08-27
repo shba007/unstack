@@ -1,5 +1,18 @@
 # unstack
 
+## v1.0.8
+
+[compare changes](https://github.com/shba007/unstack/compare/v1.0.7...v1.0.8)
+
+### 🏡 Chore
+
+- Update package dependencies and package manager version ([2210036](https://github.com/shba007/unstack/commit/2210036))
+- Updated bun.lock ([0b8aeba](https://github.com/shba007/unstack/commit/0b8aeba))
+
+### ❤️ Contributors
+
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.7
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.6...v1.0.7)
