@@ -77,7 +77,7 @@
     "pnpm": "^9.15.0 || ^10.2.0",
     "bun": "^1.2.9"
   },
-  "packageManager": "bun@1.3.14",
+  "packageManager": "bun@1.4.0",
   "scripts": {
     "prepare": "husky || true",
     "dev": "dotenvx run -- vitest dev",
@@ -94,7 +94,7 @@
     "unstack": "./dist/bin/cli.exe"
   },
   "dependencies": {
-    "@inquirer/prompts": "^8.5.2",
+    "@inquirer/prompts": "^8.7.0",
     "@shba007/unascii": "^1.0.6",
     "chalk": "^6.0.0",
     "citty": "^0.2.2",
@@ -104,22 +104,22 @@
     "ora": "^9.4.1",
     "std-env": "^4.2.0",
     "string-width": "^8.2.2",
-    "wrap-ansi": "^10.0.0"
+    "wrap-ansi": "^10.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.1",
-    "@commitlint/config-conventional": "^21.2.0",
-    "@dotenvx/dotenvx": "^2.19.2",
-    "@types/node": "^26.1.2",
-    "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^10.8.0",
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "@dotenvx/dotenvx": "^2.21.0",
+    "@types/node": "^26.4.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.9.1",
     "eslint-config-unjs": "^0.6.2",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
     "prettier": "^3.9.6",
     "typescript": "^6.0.3",
     "unbuild": "^3.6.1",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "trustedDependencies": [
     "@tailwindcss/oxide",
