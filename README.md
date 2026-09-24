@@ -61,19 +61,19 @@ Import:
 **ESM** (Node.js, Bun)
 
 ```js
-import { getDetails } from '@shba007/unstack'
+import { getDetails } from '@shba007/unstack';
 ```
 
 **CommonJS** (Legacy Node.js)
 
 ```js
-const { getDetails } = require('@shba007/unstack')
+const { getDetails } = require('@shba007/unstack');
 ```
 
 **CDN** (Deno, Bun and Browsers)
 
 ```js
-import { getDetails } from 'https://esm.sh/@shba007/unstack'
+import { getDetails } from 'https://esm.sh/@shba007/unstack';
 ```
 
 ## Feature

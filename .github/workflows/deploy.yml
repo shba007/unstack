@@ -49,14 +49,10 @@ jobs:
 
       - name: ⚙️ Publish Package
         env:
-          NODE_AUTH_TOKEN: ${{ secrets[matrix.registry.token] }}
+          NPM_CONFIG_TOKEN: ${{ secrets[matrix.registry.token] }}
           REGISTRY_URL: ${{ matrix.registry.url }}
         run: |
-          CLEAN_URL="${REGISTRY_URL#https://}"
-          echo "//${CLEAN_URL}/:_authToken=${NODE_AUTH_TOKEN}" > ./.npmrc
-          echo "registry=${REGISTRY_URL}" >> ./.npmrc
-          bun publish --no-git-checks --access public
-          rm ./.npmrc
+          bun publish --no-git-checks --access public --registry "${REGISTRY_URL}"
 
   build-cli:
     strategy:

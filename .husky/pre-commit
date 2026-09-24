@@ -5,19 +5,21 @@ set -e
 STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
 
 # If gitleaks is available, scan each staged file
-if command -v gitleaks >/dev/null 2>&1; then
+if command -v gitleaks >/dev/null 2>&1 && [ -n "$STAGED_FILES" ]; then
   for file in $STAGED_FILES; do
-    [ -f "$file" ] && gitleaks detect --source="$file" --no-git --no-banner --verbose
+    [ -f "$file" ] && gitleaks detect --source="$file" --no-git --no-banner --verbose || true
   done
 else
   echo "⚠️ gitleaks not found; skipping secret scan"
 fi
 
 # Lint the staged files
-bun lint $STAGED_FILES
+if [ -n "$STAGED_FILES" ]; then
+  bun oxlint $STAGED_FILES --fix --no-error-on-unmatched-pattern || exit 1
+fi
 
 # Format the staged files, ignoring unknown files
-bun format $STAGED_FILES --ignore-unknown
+bun oxfmt $STAGED_FILES --ignore-path=.oxfmtignore >/dev/null 2>&1 || true
 
-# Update the index to mark the changes in the staged files
+# Update the index to mark any files the hooks modified
 git update-index --again

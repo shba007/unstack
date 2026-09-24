@@ -22,4 +22,4 @@ minify = true
 
 [debug]
 # Configure debug mode
-inject-preload = true 
+inject-preload = true

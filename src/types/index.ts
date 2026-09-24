@@ -1,12 +1,12 @@
 export interface Framework {
-  name: string
-  repo: string
-  pkg: string
-  color: string
-  publishedAt: string
-  author: string | string[]
-  website: string
-  initCommend: string[]
+  name: string;
+  repo: string;
+  pkg: string;
+  color: string;
+  publishedAt: string;
+  author: string | string[];
+  website: string;
+  initCommend: string[];
 }
 
 export enum FrameworkName {

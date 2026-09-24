@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { runMain } from '../src/cli'
+import { runMain } from '../src/cli';
 
-runMain()
+runMain();

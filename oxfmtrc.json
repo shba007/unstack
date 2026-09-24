@@ -1,0 +1,11 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "printWidth": 200,
+  "trailingComma": "es5",
+  "bracketSameLine": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "endOfLine": "lf",
+  "ignorePatterns": [".oxlintrc.json", "oxfmtrc.json", ".oxfmtignore", "src/**/*.js"]
+}

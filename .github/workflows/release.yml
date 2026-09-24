@@ -27,4 +27,4 @@ jobs:
       - name: 📝 Create Release Note
         run: bunx changelogen@latest gh release
         env:
-          GITHUB_TOKEN: ${{secrets.GH_PAT}}
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}

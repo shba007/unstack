@@ -1,0 +1,16 @@
+{
+  "$schema": "https://oxc.rs/schemas/config/oxlintrc.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "pedantic": "warn",
+    "perf": "warn",
+    "style": "warn",
+    "restriction": "off"
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "ignorePatterns": ["dist", "node_modules", "temp", "coverage", "**/*.md", "src/**/*.js"]
+}

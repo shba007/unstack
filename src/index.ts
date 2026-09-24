@@ -1,17 +1,20 @@
-import { $fetch } from 'ofetch'
-import { format, formatDistance, parseISO } from 'date-fns'
-import { asciiPrint } from '@shba007/unascii'
-import ora from 'ora'
-import { FrameworkName } from './types'
-import frameworks from './frameworks.json'
+import { $fetch } from 'ofetch';
+import { format, formatDistance, parseISO } from 'date-fns';
+import { asciiPrint } from '@shba007/unascii';
+import ora from 'ora';
+import type { FrameworkName } from './types';
+import frameworks from './frameworks.json';
 
 export function getColor(framework: FrameworkName) {
-  return frameworks[framework].color
+  return frameworks[framework].color;
 }
 
 export async function getImage(framework: FrameworkName) {
-  const print = await asciiPrint(`https://raw.githubusercontent.com/shba007/unstack/refs/heads/main/public/logos/${framework}.svg`, { width: 24, widthSkew: 2, output: 'console' })
-  return print.getImage()
+  const print = await asciiPrint(
+    `https://raw.githubusercontent.com/shba007/unstack/refs/heads/main/public/logos/${framework}.svg`,
+    { output: 'console', width: 24, widthSkew: 2 },
+  );
+  return print.getImage();
 }
 
 function getVersion(version: string | undefined, updatedAt: any): string | undefined {
@@ -19,36 +22,45 @@ function getVersion(version: string | undefined, updatedAt: any): string | undef
     ? `${version} (${formatDistance(parseISO(updatedAt[version]), new Date(), {
         addSuffix: true,
       })})`
-    : undefined
+    : undefined;
 }
 
 export async function getDetails(framework: FrameworkName) {
-  const spinner = ora('Loading Details').start()
+  const spinner = ora('Loading Details').start(),
+    { name, repo, pkg, publishedAt, author, website, initCommend } = frameworks[framework],
+    [{ repo: details }, release] = await Promise.all([
+      $fetch(`/repos/${repo}`, { baseURL: 'https://ungh.cc' }),
+      $fetch(`/${pkg}`, { baseURL: 'https://registry.npmjs.org' }),
+    ]);
 
-  const { name, repo, pkg, publishedAt, author, website, initCommend } = frameworks[framework]
-
-  const [{ repo: details }, release] = await Promise.all([$fetch(`/repos/${repo}`, { baseURL: 'https://ungh.cc' }), $fetch(`/${pkg}`, { baseURL: 'https://registry.npmjs.org' })])
-
-  spinner.succeed('Loaded Details')
-  const { description: repoDescription, stars } = details
-  const { description: releaseDescription, time: updatedAt } = release
-  const versions = release['dist-tags']
+  spinner.succeed('Loaded Details');
+  const { description: repoDescription, stars } = details,
+    { description: releaseDescription, time: updatedAt } = release,
+    versions = release['dist-tags'];
 
   return {
-    name: name,
+    author,
     description: repoDescription ?? releaseDescription,
-    stars,
-    publishedAt: `${format(parseISO(publishedAt), 'dd MMM, yyyy')} (${formatDistance(parseISO(publishedAt), new Date(), {
-      addSuffix: true,
-    })})`,
-    version: {
-      stable: getVersion(versions.latest, updatedAt),
-      next: new Date(updatedAt[versions.next]).getTime() > new Date(updatedAt[versions.latest]).getTime() ? getVersion(versions.next, updatedAt) : undefined,
-    },
-    author: author,
-    website: website,
     github: `https://github.com/${repo}`,
-    npm: `https://www.npmjs.com/package/${pkg}`,
     initCommend,
-  }
+    name,
+    npm: `https://www.npmjs.com/package/${pkg}`,
+    publishedAt: `${format(parseISO(publishedAt), 'dd MMM, yyyy')} (${formatDistance(
+      parseISO(publishedAt),
+      new Date(),
+      {
+        addSuffix: true,
+      },
+    )})`,
+    stars,
+    version: {
+      next:
+        new Date(updatedAt[versions.next]).getTime() >
+        new Date(updatedAt[versions.latest]).getTime()
+          ? getVersion(versions.next, updatedAt)
+          : undefined,
+      stable: getVersion(versions.latest, updatedAt),
+    },
+    website,
+  };
 }

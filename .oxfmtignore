@@ -8,6 +8,14 @@ node_modules
 package.json
 bun.lock
 
+# Config files
+.oxlintrc.json
+oxfmtrc.json
+.oxfmtignore
+
+# Stray build artifacts in src/ (unbuild outputs to dist/)
+src/**/*.js
+
 # Logs
 logs
 *.log
@@ -23,3 +31,6 @@ coverage
 # Env files
 .env*
 !.env.example
+
+# Temporary Files
+temp
