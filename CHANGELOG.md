@@ -1,5 +1,17 @@
 # unstack
 
+## v1.0.9
+
+### 🏡 Chore
+
+- Update dependencies to latest versions ([7221c51](https://github.com/shba007/unstack/commit/7221c51))
+- Apply code fixes [skip ci] ([9ac44c1](https://github.com/shba007/unstack/commit/9ac44c1))
+
+### ❤️ Contributors
+
+- Shba007 ([@shba007](https://github.com/shba007))
+- Shirsendu Bairagi ([@shba007](https://github.com/shba007))
+
 ## v1.0.8
 
 [compare changes](https://github.com/shba007/unstack/compare/v1.0.7...v1.0.8)
