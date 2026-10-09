@@ -88,34 +88,34 @@
     "unstack": "./dist/bin/cli.exe"
   },
   "dependencies": {
-    "@inquirer/prompts": "^8.7.2",
-    "@shba007/unascii": "^1.0.13",
-    "chalk": "^6.0.0",
+    "@inquirer/prompts": "^8.7.3",
+    "@shba007/unascii": "^1.0.14",
+    "chalk": "^6.0.1",
     "citty": "^0.2.2",
     "consola": "^3.4.2",
     "date-fns": "^4.4.0",
     "ofetch": "^1.5.1",
     "ora": "^9.4.1",
-    "std-env": "^4.2.0",
-    "string-width": "^8.2.2",
+    "std-env": "^4.3.0",
+    "string-width": "^8.3.0",
     "wrap-ansi": "^10.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
-    "@dotenvx/dotenvx": "^2.30.0",
-    "@types/node": "^26.6.2",
-    "@vitest/coverage-v8": "^5.0.1",
+    "@dotenvx/dotenvx": "^2.33.0",
+    "@types/node": "^26.6.4",
+    "@vitest/coverage-v8": "^5.0.3",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
-    "oxfmt": "0.70.0",
-    "oxlint": "1.85.0",
+    "oxfmt": "0.72.0",
+    "oxlint": "1.87.0",
     "typescript": "^6.0.3",
     "unbuild": "^3.6.1",
-    "vitest": "^5.0.1"
+    "vitest": "^5.0.3"
   },
   "engines": {
-    "bun": "^1.2.9",
+    "bun": "^1.4.2",
     "node": "^20.15.0 || ^22.11.0",
     "pnpm": "^9.15.0 || ^10.2.0"
   },
