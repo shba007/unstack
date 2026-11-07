@@ -95,7 +95,7 @@
     "consola": "^3.4.2",
     "date-fns": "^4.4.0",
     "ofetch": "^1.5.1",
-    "ora": "^9.4.1",
+    "ora": "^10.0.0",
     "std-env": "^4.2.0",
     "string-width": "^8.2.2",
     "wrap-ansi": "^10.0.2"
