@@ -97,7 +97,7 @@
     "ofetch": "^1.5.1",
     "ora": "^9.4.1",
     "std-env": "^4.2.0",
-    "string-width": "^8.2.2",
+    "string-width": "^9.0.0",
     "wrap-ansi": "^10.0.2"
   },
   "devDependencies": {
